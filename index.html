@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruturaj Dilip Gawade | Automation & Control Engineer</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e355d378b.js" crossorigin="anonymous"></script>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <nav id="navbar">
+        <div class="logo">RG</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">AI Assistant</a></li>
+        </ul>
+        <button id="menu-btn" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <main>
+        <header id="home">
+            <video autoplay muted loop id="bg-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-futuristic-data-center-with-a-grid-of-blinking-lights-4713-large.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="video-overlay"></div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Ruturaj Dilip Gawade">Ruturaj Dilip Gawade</h1>
+                <p>Automation & <span id="typing-text"></span></p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#" id="get-in-touch-btn" class="btn">Get In Touch</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="reveal">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="profile-pic-container">
+                    <canvas id="profile-canvas"></canvas>
+                    <img src="https://i.ibb.co/6P8gXfC/profile-pic.png" alt="Ruturaj Dilip Gawade" class="profile-pic">
+                </div>
+                <p>Automation & Commissioning Engineer with 3 years of hands-on experience in PLC, HMI, and SCADA-based industrial automation, delivering projects for clients of German, Italian, UK, US, and Indian origin. Proficient in Siemens, Allen-Bradley, and Mitsubishi automation platforms. Experienced in commissioning, troubleshooting, field integration, and remote customer support, ensuring reliable system performance under real production conditions.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="reveal">
+            <h2>Experience</h2>
+            <div class="experience-card reveal">
+                <h3>Automation & Commissioning Engineer – Promatics Solutions</h3>
+                <p class="company-info">March 2021 – April 2024 | Pune, India</p>
+                <p>Specialized in PLC programming, HMI design, and SCADA development for complete industrial automation systems.</p>
+                <div class="details">
+                    <ul>
+                        <li>Executed on-site commissioning and system integration, ensuring seamless process operation across multiple control platforms.</li>
+                        <li>Managed field communication setup and troubleshooting over EtherNet/IP, Profinet, and Modbus TCP networks.</li>
+                        <li>Delivered remote support and diagnostics through Anydesk and VPN-based access, ensuring minimum downtime.</li>
+                        <li>Provided emergency support during critical production restarts, restoring system functionality under tight deadlines.</li>
+                        <li>Coordinated with mechanical, electrical, and instrumentation teams to align field devices and verify interlocks.</li>
+                        <li>Handled customer training, documentation, and technical handover for smooth transition to plant operations teams.</li>
+                        <li>Ensured robust alarm management, safety logic validation, and optimized system response during field trials.</li>
+                    </ul>
+                </div>
+                <button class="read-more-btn">Read More</button>
+            </div>
+        </section>
+        
+        <section id="projects" class="reveal">
+            <h2>Professional Automation Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <img src="./assets/automotive-test-loop.png" alt="Automotive Test Loop Line diagram with PLC, HMI, Press and Conveyor">
+                    <h3>Automotive Test Loop Line</h3>
+                    <p>Designed and implemented PLC/HMI logic for a fully automated vehicle test loop line for a German client.</p>
+                    <div class="details">
+                        <h4>Objective</h4>
+                        <p>To create control logic for a multi-station line with turntables, conveyors, presses, and lift tables, ensuring synchronized movement and safe operations.</p>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                            <li>Developed complete PLC programs in GX Works 3 for all equipment.</li>
+                            <li>Created auto/manual modes with structured interlock logic.</li>
+                            <li>Designed and configured HMI screens in GT Designer 3 for status overview, alarms, and manual control.</li>
+                            <li>Tested transitions, safety logic, and sequence timing through simulation and on-site validation.</li>
+                        </ul>
+                        <h4>Key Achievements</h4>
+                        <ul>
+                            <li>Delivered a robust multi-station PLC + HMI solution integrating over 10 subsystems.</li>
+                            <li>Improved process reliability through modular, reusable PLC code blocks.</li>
+                            <li>Achieved synchronized operation of turntables and conveyors, ensuring continuous vehicle transfer without collisions.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>Mitsubishi FX5U</span><span>GX Works 3</span><span>GT Designer 3</span></div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <img src="./assets/boiler-house-automation.png" alt="Boiler House Automation SCADA screen">
+                    <h3>Boiler House Automation</h3>
+                    <p>Designed and commissioned a fully automated boiler house system for an Indian client.</p>
+                    <div class="details">
+                        <h4>Objective</h4>
+                        <p>To automate a dual-furnace boiler system with SCADA visualization, data logging, and modulation control.</p>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                           <li>Developed complete PLC logic for boiler start-up, auto-run, and safe shutdown sequences.</li>
+                           <li>Designed WinCC SCADA screens for overview, furnace status, and control panels.</li>
+                           <li>Configured PID control loops for steam-pressure modulation.</li>
+                           <li>Conducted full commissioning including cold, hot, and production trials.</li>
+                        </ul>
+                        <h4>Key Achievements</h4>
+                        <ul>
+                            <li>Delivered a fully operational PLC + SCADA-based automation system covering all subsystems.</li>
+                            <li>Resolved major modulation issues, stabilizing pressure control.</li>
+                            <li>Designed an intuitive SCADA interface for simplified operator control.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>Siemens S7-1200</span><span>WinCC SCADA</span><span>TIA Portal</span></div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <img src="./assets/multi-lift-and-conveyor-automation-system.png" alt="Multi-Lift & Conveyor System with HMI and PLC">
+                    <h3>Multi-Lift and Conveyor Automation</h3>
+                    <p>Modified and commissioned a multi-lift and conveyor control system for a UK-based automotive client.</p>
+                    <div class="details">
+                        <h4>Objective</h4>
+                        <p>To handle vehicle transport and elevation within an assembly facility, coordinating lifts, conveyors, and turntables for continuous movement.</p>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                           <li>Developed and modified PLC logic in Studio 5000 for new conveyor integration and lift synchronization.</li>
+                           <li>Implemented encoder-based logic using counters for accurate lift positioning.</li>
+                           <li>Added new conveyor logic to the existing Auto sequence for seamless job hand-off.</li>
+                           <li>Debugged and corrected manual mode functions (turntable rotation, conveyor jogs).</li>
+                        </ul>
+                         <h4>Key Achievements</h4>
+                        <ul>
+                            <li>Successfully expanded an existing Allen-Bradley-based conveyor network.</li>
+                            <li>Achieved precise lift motion control via encoder feedback.</li>
+                            <li>Eliminated job spacing and sequencing issues between conveyors and lifts.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>Allen-Bradley</span><span>Studio 5000</span><span>FactoryTalk</span></div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <img src="./assets/tea-plant-automation.png" alt="Tea Production Plant with Leaf Feed, Dryer, and Packaging">
+                    <h3>Tea Production Plant Automation</h3>
+                    <p>Developed a fully automated control and monitoring system for a tea production plant in India.</p>
+                    <div class="details">
+                        <h4>Objective</h4>
+                        <p>To cover all process stages from raw leaf feeding to packaging, ensuring consistent product quality, process safety, and real-time data visibility through a central SCADA.</p>
+                         <h4>Key Responsibilities</h4>
+                        <ul>
+                           <li>Designed and configured a complete SCADA system for the entire production plant.</li>
+                           <li>Developed PLC logic for all process modules including feeders, dryers, and conveyors.</li>
+                           <li>Configured PID loops for temperature and humidity control.</li>
+                           <li>Provided online customer support through Anydesk.</li>
+                        </ul>
+                        <h4>Key Achievements</h4>
+                        <ul>
+                            <li>Delivered a fully functional end-to-end automated tea manufacturing line.</li>
+                            <li>Reduced manual intervention by over 70% through automation.</li>
+                            <li>Designed intuitive SCADA visuals for clear process flow and equipment status.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>Siemens S7-1200</span><span>WinCC SCADA</span><span>PID</span><span>Anydesk</span></div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card reveal">
+                    <img src="./assets/wheel-hub-press.png" alt="Hydraulic Press system with PLC, HMI and MES Server">
+                    <h3>Wheel Hub & Hydraulic Press Machines</h3>
+                    <p>Designed and commissioned two advanced press automation machines for a U.S. automotive client.</p>
+                     <div class="details">
+                        <h4>Objective</h4>
+                        <p>To build a Wheel Hub Seal & Bearing Stud Press and a Hydraulic Station Press, both integrated with MES connectivity, servo-controlled pressing, and stepper-based positioning.</p>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                            <li>Developed and commissioned PLC programs in TIA Portal V16 for both machines.</li>
+                            <li>Integrated servo drive for pressing and stepper motor for workpiece positioning.</li>
+                            <li>Implemented MES–PLC data exchange, parsing job and part information from the MES server.</li>
+                            <li>Designed and released AutoCAD electrical drawings.</li>
+                        </ul>
+                         <h4>Key Achievements</h4>
+                        <ul>
+                            <li>Delivered two MES-integrated press machines operating seamlessly.</li>
+                            <li>Achieved real-time job selection and traceability through MES data mapping.</li>
+                            <li>Attained micron-level pressing accuracy via optimized servo control.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>Siemens S7-1200</span><span>Servo</span><span>MES</span><span>AutoCAD</span></div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card reveal">
+                    <img src="./assets/axle-stud-press.png" alt="Pressing machine with Siemens S7-1200 PLC and safety curtain">
+                    <h3>Axle & Wheel Hub Stud Pressing Line</h3>
+                    <p>Modified and integrated OPC UA-based data exchange into an automated pressing line for an Italian client.</p>
+                     <div class="details">
+                        <h4>Objective</h4>
+                        <p>To enable centralized monitoring and improved interoperability between local stations and the plant network using OPC UA.</p>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                            <li>Modified PLC logic to accommodate a new 7t press model.</li>
+                            <li>Updated and redesigned HMI screens to incorporate new operating modes and safety status.</li>
+                            <li>Developed OPC UA communication channels between Siemens PLCs and the supervisory system.</li>
+                            <li>Added and tested safety-curtain logic to prevent unintended motion.</li>
+                        </ul>
+                         <h4>Key Achievements</h4>
+                        <ul>
+                            <li>Successfully implemented OPC UA integration enabling remote process monitoring.</li>
+                            <li>Enhanced safety compliance through curtain interlocks.</li>
+                            <li>Achieved intuitive, operator-friendly HMI interface with clear feedback.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>Siemens S7-1200</span><span>OPC UA</span><span>Safety Curtain</span></div>
+                </div>
+                 <!-- Project 7 -->
+                <div class="project-card reveal">
+                    <img src="./assets/spices-grinding-packing.png" alt="Spices Grinding and Packing Automation HMI Mimic">
+                    <h3>Spices Grinding & Packing Automation</h3>
+                    <p>Designed and commissioned an integrated automation system for five independent spice processing lines in India.</p>
+                     <div class="details">
+                        <h4>Objective</h4>
+                        <p>To ensure uniform logic development, inter-system communication, and seamless control for chilly, turmeric, and other spice lines via a centralized SCADA.</p>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                            <li>Developed PLC logic for five grinding and packing lines with reusable code structure.</li>
+                            <li>Developed a centralized SCADA for all five lines within TIA Portal.</li>
+                            <li>Performed no-load and on-load testing to verify sequence logic and safety interlocks.</li>
+                            <li>Addressed and resolved fan tripping issues through diagnostic analysis.</li>
+                        </ul>
+                        <h4>Key Achievements</h4>
+                        <ul>
+                           <li>Successfully commissioned all five grinding and packing systems under a unified SCADA station.</li>
+                           <li>Improved operational visibility by centralizing five PLCs under one SCADA system.</li>
+                           <li>Delivered stable production-ready logic tested for both no-load and on-load conditions.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>Siemens S7-1400</span><span>Centralized SCADA</span><span>TIA Portal</span></div>
+                </div>
+                 <!-- Project 8 -->
+                <div class="project-card reveal">
+                    <img src="./assets/axle-bearing-scada.png" alt="Axle & Bearing Assembly SCADA diagram">
+                    <h3>Multi-Station Axle & Bearing SCADA</h3>
+                    <p>Enhanced and integrated a four-station automated axle and bearing assembly line for a client in Italy.</p>
+                     <div class="details">
+                        <h4>Objective</h4>
+                        <p>To implement efficient alarm management, manual operation, and recipe control through networked ASEM HMIs and a central ASEM Industrial PC.</p>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                            <li>Worked closely with Italian automation specialists to optimize the SCADA layer.</li>
+                            <li>Reorganized and optimized a large-scale alarm system (≈1800 alarms) by exporting data to CSV, restructuring, and re-importing it.</li>
+                            <li>Developed recipe management functionality for both individual stations and synchronized production.</li>
+                            <li>Performed detailed testing and debugging to stabilize the multi-station SCADA environment.</li>
+                        </ul>
+                        <h4>Key Achievements</h4>
+                        <ul>
+                           <li>Delivered a robust and synchronized multi-station SCADA system.</li>
+                           <li>Streamlined a complex 1800-alarm database, improving diagnostic accuracy.</li>
+                           <li>Established recipe-based production flexibility, significantly reducing product changeover time.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>SCADA</span><span>ASEM HMI</span><span>Alarm Management</span><span>Recipe Management</span></div>
+                </div>
+                 <!-- Project 9 -->
+                <div class="project-card reveal">
+                    <img src="./assets/pharma-powder-conveying.png" alt="Pharma Powder Conveying HMI screen">
+                    <h3>Pharma Powder Conveying & Grinding</h3>
+                    <p>Commissioned and validated an automated line for powder conveying, grinding, and packing for a pharma client in India.</p>
+                    <div class="details">
+                        <h4>Objective</h4>
+                        <p>To ensure reliable AUTO / MANUAL operation, safe interlocks, comprehensive alarm handling, and smooth handover for a powder transfer line from silo to packing.</p>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                            <li>Performed complete I/O verification, scaling and sensor calibration.</li>
+                            <li>Implemented and tested PLC sequencing for three auto cycles: silo feed, grinding, and packing.</li>
+                            <li>Configured VFD integration (start/stop, Hz setpoints, fault handling).</li>
+                            <li>Implemented interlocks and safety permissives (metal detector reject, door open, e-stop).</li>
+                        </ul>
+                        <h4>Key Achievements</h4>
+                        <ul>
+                           <li>Verified stable AUTO / MANUAL operation across all subsystems.</li>
+                           <li>Completed dry-run auto cycles using signal simulation for FAT-style validation.</li>
+                           <li>Strengthened alarm and interlock logic, reducing unsafe starts and improving fault detection.</li>
+                        </ul>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="tags"><span>CompactLogix</span><span>Studio 5000</span><span>VFD</span><span>FactoryTalk ME</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="reveal">
+            <h2>Education</h2>
+            <div class="education-grid">
+                 <div class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="education-content">
+                        <h3>Master in Digital Engineering</h3>
+                        <p>Otto von Guericke University Magdeburg, Germany</p>
+                        <p class="dates">04.2024 - Present</p>
+                    </div>
+                </div>
+                 <div class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-university"></i></div>
+                    <div class="education-content">
+                        <h3>Bachelor of Technology in Electrical Engineering</h3>
+                        <p>Savitrabai Phule Pune University, India</p>
+                        <p class="dates">06.2020 - 07.2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="reveal">
+            <h2>Skills</h2>
+            <canvas id="skills-canvas"></canvas>
+            <div class="skills-grid">
+                <div class="skill-card reveal"><i class="fas fa-microchip"></i><span>Siemens (TIA Portal)</span></div>
+                <div class="skill-card reveal"><i class="fas fa-robot"></i><span>Allen-Bradley (Studio 5000)</span></div>
+                <div class="skill-card reveal"><i class="fas fa-cogs"></i><span>Mitsubishi (GX Works 3)</span></div>
+                <div class="skill-card reveal"><i class="fas fa-industry"></i><span>SCADA (WinCC)</span></div>
+                <div class="skill-card reveal"><i class="fas fa-desktop"></i><span>HMI Design</span></div>
+                <div class="skill-card reveal"><i class="fas fa-network-wired"></i><span>OPC UA / EtherNet/IP</span></div>
+                <div class="skill-card reveal"><i class="fas fa-wrench"></i><span>Troubleshooting</span></div>
+                <div class="skill-card reveal"><i class="fas fa-check-circle"></i><span>Commissioning</span></div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="chat-bubble" aria-label="Open AI Assistant" role="button">
+        <div class="robot-head">
+            <div class="antenna left"></div>
+            <div class="antenna right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+
+    <div id="chat-modal-container" class="modal-container">
+        <div class="modal-content">
+            <button class="close-btn" aria-label="Close">&times;</button>
+            <h2>AI Assistant</h2>
+            <p class="subheading">Ask my AI assistant any questions you have about my experience or skills!</p>
+            <div class="chat-container">
+                <div id="chat-history"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="chat-input" placeholder="e.g., 'Which PLC platforms is he proficient in?'" aria-label="Ask a question">
+                    <button id="send-btn" aria-label="Send message">
+                        →
+                    </button>
+                    <div id="loader" class="hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="email-modal-container" class="modal-container">
+        <div class="modal-content">
+            <button class="close-btn" aria-label="Close">&times;</button>
+            <h2>Get In Touch</h2>
+            <p>You can reach out to Ruturaj directly via email:</p>
+            <a href="mailto:ruturajabroad@gmail.com" class="email-link">ruturajabroad@gmail.com</a>
+        </div>
+    </div>
+    
+    <div id="project-modal-container" class="modal-container">
+        <div class="modal-content project-modal-content">
+            <button class="close-btn" aria-label="Close">&times;</button>
+            <div class="project-modal-body">
+                <div class="project-modal-image-container">
+                    <img id="project-modal-img" src="" alt="Project Image">
+                </div>
+                <div class="project-modal-details">
+                    <h2 id="project-modal-title"></h2>
+                    <div id="project-modal-details-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Ruturaj Dilip Gawade. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
