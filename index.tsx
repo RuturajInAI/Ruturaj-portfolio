@@ -162,7 +162,7 @@ scanAccordions.forEach((accordion) => {
  * Triggers the download of the uploaded PDF file.
  */
 function downloadPDF() {
-  const sourceFileName = "https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio/main/Portfolio_Ruturaj_Dilip_Gawade.pdf";
+  const sourceFileName = "https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio/main/Portfolio_Ruturaj.pdf";
   const downloadName = "Ruturaj_Gawade_Resume.pdf";
   
   const link = document.createElement("a");
