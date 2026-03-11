@@ -1,0 +1,3044 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruturaj Dilip Gawade | Automation Engineer & Control Engineer</title>
+  <meta name="description"
+    content="Official Portfolio of Ruturaj Dilip Gawade – Automation Engineer (PLC, HMI, SCADA)" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="index.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3e355d378b.js" crossorigin="anonymous"></script>
+  <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <canvas id="background-canvas"></canvas>
+  <div class="site-scale"></div>
+  <nav id="navbar">
+    <div class="logo">RG</div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" id="ai-assistant-nav-link">AI Assistant</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="download-pdf-btn" class="btn-download" aria-label="Download PDF Resume">
+        <i class="fas fa-file-pdf"></i> <span>Download as PDF</span>
+      </button>
+      <button id="menu-btn" aria-label="Open Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <header id="home">
+      <div class="hero-content">
+        <h1 class="glitch" data-text="Ruturaj Dilip Gawade">
+          Ruturaj Dilip Gawade
+        </h1>
+        <p>Automation Engineer & <span id="typing-text"></span></p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#" id="get-in-touch-btn" class="btn">Get In Touch</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+
+      <div class="about-container">
+        <div class="profile-pic-container">
+          <canvas id="profile-canvas"></canvas>
+          <img
+            src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Resume_PIC_1.jpg"
+            alt="Ruturaj Dilip Gawade" class="profile-pic" />
+        </div>
+
+        <div class="about-text">
+          <p class="about-lead">
+            I build industrial automation that is reliable in real production, not only on paper.
+          </p>
+
+          <div class="about-block">
+            <h3 class="about-subtitle">My Story</h3>
+            <p>
+              During my diploma studies, I attended a workshop where I saw something that immediately clicked for me. On
+              a screen, there was a ladder-like diagram,
+              and that diagram was controlling real robots. It looked simple, but the impact was huge. I still remember
+              thinking, if a few lines of logic can move a robot,
+              then how cool will it be to see it controlling big machines in a factory.
+            </p>
+            <p>
+              That moment pushed me to take a course in automation, and soon after I got my 1st job and started working in the industry. In the
+              beginning I was learning by doing, understanding sensors, electrical wiring,
+              signals, and why machines fail when one small condition is wrong. Step by step, projects became bigger,
+              and the problems became more real.
+            </p>
+            <p>
+              Within two years, I reached a point where I was not only writing the logic, but also guiding other
+              engineers working under and alongside me. We worked shoulder to shoulder,
+              programming systems, testing them, and commissioning complex automation for major customers. That journey
+              shaped how I work today: structured, calm under pressure,
+              and always focused on what will actually work on the shopfloor.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h3 class="about-subtitle">What I Do Today</h3>
+            <p>
+              I have 3 years of experience in industrial automation and commissioning, working across sectors such as
+              automotive manufacturing, intralogistics and material handling,
+              food processing, pharma production, and utility and process industries. My work covers planning, development, site
+              commissioning, troubleshooting, customer coordination,
+              and handover documentation, so systems stay stable not only during trials but also after go-live.
+            </p>
+            <p>
+              After delivering projects for customers across different countries and working in fast-paced shopfloor
+              environments, I moved to Germany to pursue my master’s in digital engineering.
+              I enjoy combining real industrial experience with modern digital skills, and I am building my future
+              around smarter, more connected automation systems.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="about-chip">
+              <span class="chip-title">Strength</span>
+              <span class="chip-text">Turning complex sequences into clear, reliable operation</span>
+            </div>
+
+            <div class="about-chip">
+              <span class="chip-title">Style</span>
+              <span class="chip-text">Structured logic, clean communication, fast root-cause isolation</span>
+            </div>
+
+            <div class="about-chip">
+              <span class="chip-title">Focus</span>
+              <span class="chip-text">Commissioning readiness, safety thinking, production stability</span>
+            </div>
+
+            <div class="about-chip">
+              <span class="chip-title">Value</span>
+              <span class="chip-text">Operator-friendly control with strong diagnostics and handover</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <h2>Experience</h2>
+
+      <div class="experience-card reveal">
+        <h3>Automation & Commissioning Engineer – Promatics Solutions</h3>
+        <p class="company-info">March 2021 – April 2024 | Pune, India</p>
+
+        <p>
+          I worked on industrial automation projects from early customer discussions to on-site commissioning and
+          after-sales support. My day-to-day goal was simple: make the system run reliably on the shopfloor and keep
+          troubleshooting fast when production could not wait.
+        </p>
+
+        <div class="details">
+          <p>
+            At Promatics Solutions, I handled both development work and real field execution. That meant writing logic,
+            validating signals, checking wiring, coordinating with teams, and staying calm during critical restarts when
+            the customer needed the line running again quickly.
+          </p>
+
+          <ul>
+            <li>
+              Led requirement and kickoff discussions with customers, clarified scope, I/O points, safety expectations,
+              and acceptance criteria before development started.
+            </li>
+            <li>
+              Developed PLC logic, HMI screens, and SCADA monitoring for complete automation systems, focusing on clean
+              sequencing, safe interlocks, meaningful alarms, and operator-friendly recovery flows.
+            </li>
+            <li>
+              Executed on-site commissioning and system integration, including loop checks, signal validation, sensor
+              calibration, dry runs, hot trials, and final site acceptance testing.
+            </li>
+            <li>
+              Managed industrial communication and troubleshooting across EtherNet/IP, Profinet, and Modbus TCP,
+              including network setup, addressing, device status checks, and stable data exchange.
+            </li>
+            <li>
+              Supported electrical work on the shopfloor by verifying field wiring, terminal mapping, and I/O
+              allocation, fixing wiring mismatches, and coordinating with electrical teams to restore correct signals
+              quickly.
+            </li>
+            <li>
+              Worked with AutoCAD electrical drawings by updating wiring diagrams, documenting changes during assembly
+              and commissioning, and keeping drawings aligned with the final built system.
+            </li>
+            <li>
+              Built maintenance-friendly systems by adding practical diagnostics, clean manual modes, clear alarm
+              messages, backup and version discipline, and guidance that helped maintenance teams isolate faults faster.
+            </li>
+            <li>
+              Handled customer coordination throughout the project, including daily updates during commissioning, clear
+              communication during breakdowns, emergency support for critical production restarts, and technical
+              handover with training and documentation.
+            </li>
+            <li>
+              Provided after-sales support through AnyDesk and VPN-based access, using logs and diagnostics to identify
+              root cause, apply safe fixes, and reduce downtime without needing unnecessary site visits.
+            </li>
+          </ul>
+
+          <p>
+            During the pandemic, my university followed hybrid and online semesters, which made it possible to work and
+            study in parallel. I joined Promatics Solutions in 2021 for full-time, hands-on exposure in industrial
+            automation while completing my B.Tech coursework. With guidance from my faculty, this role was officially
+            recognized as my final-year internship equivalent, and after graduation I continued full-time and supported
+            multiple customer projects through 2024.
+          </p>
+        </div>
+
+        <button class="read-more-btn">Read More</button>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Professional Automation Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 (same style as Project 2) -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Gemini_Automotive%20Test%20Loop%20Line.png"
+              alt="Automotive Test Loop Line" />
+          </div>
+
+          <h3>Automotive Test Loop Line Automation</h3>
+
+          <p>
+            A multi-station automotive test loop line where my focus was controlled motion and predictable behavior
+            across interacting stations. I kept the sequence logic clean and the operator flow simple, so faults could
+            be understood fast and recovery stayed safe during real production use.
+          </p>
+
+          <!-- Expandable quick scan -->
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Automotive automation</span>
+                </div>
+                <div>
+                  <span class="qs-k">Role:</span><span class="qs-v">PLC and HMI Programmer</span>
+                </div>
+                <div>
+                  <span class="qs-k">Tech:</span><span class="qs-v">Mitsubishi FX5U, GX Works 3</span>
+                </div>
+                <div>
+                  <span class="qs-k">HMI:</span><span class="qs-v">GT Designer 3 (GOT 2000)</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Built step based sequences so conveyors, turntables,
+                  presses, and lifts worked in sync.
+                </li>
+                <li>
+                  Added feedback checks and safety interlocks so motion
+                  happened only when conditions were safe.
+                </li>
+                <li>
+                  Supported commissioning with clear alarms, status, and safe
+                  manual controls for quick fault finding.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> stable Auto and Manual operation,
+                  safer movement, faster troubleshooting.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> IO mapping, alarm list, network
+                  IP plan, commissioning checklist, PLC and HMI backups.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Open the complete workflow, responsibilities, and
+                    outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>Germany</p>
+
+            <h4>Role</h4>
+            <p>PLC and HMI Programmer | Commissioning Support</p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              Mitsubishi FX5U PLC, GX Works 3, GT Designer 3 (GOT 2000),
+              Ethernet communication, digital IO, sensor feedback handling,
+              interlock logic, Auto and Manual modes, alarm and diagnostics
+              screens, safe motion sequencing.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              This line was not just one machine. It was a full loop where
+              pallets keep moving from station to station, and everything must
+              stay in sync. Conveyors move pallets forward, turntables rotate
+              them at the right moment, presses perform the action, and lift
+              tables change levels. If one station gets delayed or one sensor
+              behaves unexpectedly, the whole line can stop or create a risky
+              situation.
+            </p>
+            <p>
+              My responsibility was to make the control logic feel calm and
+              predictable. In Auto mode, the line should move like a
+              well-practiced routine. In Manual mode, the operator should have
+              safe recovery tools that help them fix a problem without
+              creating another one. During commissioning, the goal was always
+              the same: find issues fast, fix them cleanly, and communicate
+              clearly with the customer team.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Deliver a stable PLC and HMI solution for a multi station
+              automotive test loop line, with safe sequencing, clear
+              interlocks, and operator friendly screens for daily operation
+              and troubleshooting.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Conveyors:</strong> move pallets between stations with
+                sensor verified handshakes.
+              </li>
+              <li>
+                <strong>Turntable:</strong> rotates only when pallet position,
+                stoppers, and station status are confirmed.
+              </li>
+              <li>
+                <strong>Press station:</strong> runs with safety checks and
+                step logic so the cycle is consistent every time.
+              </li>
+              <li>
+                <strong>Stoppers and lift tables:</strong> control spacing and
+                level transitions to avoid collisions.
+              </li>
+              <li>
+                <strong>HMI layer:</strong> shows station status, cycle steps,
+                alarms, and safe manual recovery controls.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>PLC structure and step logic:</strong> I built the
+                line as clear steps, so each station knows when to wait, when
+                to act, and when to hand over to the next station. This made
+                testing easier and reduced unexpected behavior during real
+                movement.
+              </li>
+              <li>
+                <strong>Interlocks and feedback checks:</strong> I used real
+                sensor feedback and condition checks before allowing motion.
+                If something was not safe, the logic blocked movement and
+                showed the reason clearly.
+              </li>
+              <li>
+                <strong>Auto and Manual design:</strong> I separated Auto
+                cycles from Manual actions so operators could recover safely.
+                Manual movement was controlled with permissions and clear
+                limits, so small mistakes do not become big incidents.
+              </li>
+              <li>
+                <strong>HMI usability:</strong> I designed screens that answer
+                operator questions quickly: what is running, what is waiting,
+                what is blocked, and what to do next. Alarms were written to
+                be practical, not confusing.
+              </li>
+              <li>
+                <strong>Communication and diagnostics:</strong> I kept
+                Ethernet settings and device communication stable, and added
+                diagnostics bits and status views so faults can be tracked
+                without guessing.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Commissioning and Customer Coordination</h4>
+            <ul>
+              <li>
+                <strong>IO checks and validation:</strong> I verified sensors
+                and actuators end to end, confirmed correct addressing, and
+                fixed mismatches early so later testing stays smooth.
+              </li>
+              <li>
+                <strong>Dry run to live trials:</strong> I tested sequences
+                step by step, first in safe conditions, then with real
+                movement. When timing issues appeared, I adjusted steps,
+                timeouts, and confirmations until the sequence became
+                reliable.
+              </li>
+              <li>
+                <strong>Troubleshooting under pressure:</strong> when the line
+                stopped, I used the HMI status, station signals, and logic
+                steps to isolate the root cause quickly, then implemented a
+                clean fix instead of a temporary workaround.
+              </li>
+              <li>
+                <strong>Customer interaction:</strong> I coordinated with the
+                customer team during trials, explained what the issue was in
+                simple terms, shared what change I was making, and confirmed
+                the result together. This kept trust high and decisions fast.
+              </li>
+              <li>
+                <strong>Operator handover:</strong> I supported training and
+                explained safe manual recovery flows so the team could handle
+                common issues confidently.
+              </li>
+            </ul>
+
+            <h4>Challenges and What I Fixed</h4>
+            <ul>
+              <li>
+                <strong>Sequence breaks due to sensor timing:</strong>
+                improved stability using better step confirmation, debouncing
+                where needed, and clear timeouts with alarms.
+              </li>
+              <li>
+                <strong>Collision risk during recovery:</strong> strengthened
+                interlocks and added safer manual permissions so recovery
+                actions stayed controlled.
+              </li>
+              <li>
+                <strong>Slow fault finding:</strong> improved HMI status and
+                alarm clarity so operators and maintenance could locate the
+                problem faster.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>Final PLC and HMI project backups with clean structure.</li>
+              <li>
+                IO mapping notes and basic station wise signal references.
+              </li>
+              <li>Alarm list with messages written for operators.</li>
+              <li>
+                Commissioning checklist and trial observations for future
+                support.
+              </li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>Smoother line movement and reliable station handshakes.</li>
+              <li>
+                Safer operation through feedback verified interlocks and
+                controlled manual recovery.
+              </li>
+              <li>
+                Faster troubleshooting using practical HMI status and alarms.
+              </li>
+              <li>
+                Successful customer trials and clear handover with documented
+                backups.
+              </li>
+            </ul>
+          </div>
+          <div class="tags">
+            <span>Mitsubishi FX5U</span>
+            <span>GX Works 3</span>
+            <span>GOT2000 HMI</span>
+            <span>Step Sequencing</span>
+            <span>Conveyor Synchronization</span>
+            <span>Safety Interlocking</span>
+            <span>Commissioning</span>
+            <span>Fault Isolation</span>
+          </div>
+        </div>
+        <!-- Project 2 (Overview always visible + View Details) -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Boiler%20House%20Automation.png"
+              alt="Boiler House Automation" />
+          </div>
+
+          <h3>Boiler House PLC and SCADA Automation</h3>
+
+          <p>
+            A boiler house automation project where my focus was stable steam generation performance under real plant
+            conditions. I kept control behavior smooth and visibility clear, so modulation, alarms, and trial running
+            stayed reliable without creating unnecessary complexity.
+          </p>
+
+          <!-- Expandable quick scan -->
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+
+            <!-- Your existing quick-scan content stays the same inside -->
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Utilities and steam generation</span>
+                </div>
+                <div>
+                  <span class="qs-k">Role:</span><span class="qs-v">PLC and SCADA Programmer, Commissioning
+                    Engineer</span>
+                </div>
+                <div>
+                  <span class="qs-k">Tech:</span><span class="qs-v">Siemens S7-1200, TIA Portal V14</span>
+                </div>
+                <div>
+                  <span class="qs-k">SCADA:</span><span class="qs-v">WinCC (TIA Portal), Trends and Alarms</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Built safe start-up and shutdown sequences for fuel
+                  handling, dual furnaces, draft fans, and feed-water system
+                  using permissives and interlocks.
+                </li>
+                <li>
+                  Implemented steam pressure modulation and feed tank level
+                  control using PID loops, stable analog scaling, and clear
+                  Auto and Manual behavior.
+                </li>
+                <li>
+                  Led commissioning with loop checks, cold and hot trials,
+                  alarm tuning, and operator handover, including close
+                  customer communication during production trials.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> stable steam pressure control,
+                  fewer nuisance trips, smoother ramp-up, faster
+                  troubleshooting for operators.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> IO list and scaling sheet, WinCC
+                  tag list, alarm list and messages, cause and effect notes,
+                  PID tuning record, commissioning checklist, final backups
+                  and handover package.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Click View Details to open the complete workflow,
+                    responsibilities, and outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <!-- Read More content (hidden, used by your modal) -->
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>India</p>
+
+            <h4>Role</h4>
+            <p>PLC and SCADA Programmer | Commissioning Engineer</p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              Siemens S7-1200 PLC, TIA Portal V14, WinCC SCADA (TIA), Ethernet
+              communication, analog input and output scaling, PID control,
+              step sequencing, safety interlocks, trends and data logging,
+              alarm and event handling.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              This project felt like running a small city of machines. Fuel
+              had to travel through multiple stages, two furnaces had to stay
+              stable, fans had to maintain the right draft, and the feed-water
+              system had to protect the boiler at all times. On paper, it
+              looks straightforward. On the shop floor, small issues like
+              noisy analog signals or a wrong permissive can stop the whole
+              operation.
+            </p>
+            <p>
+              My job was to make the system behave like a reliable operator:
+              start only when it is safe, react quickly to abnormal
+              conditions, and recover in a clear, predictable way. At the same
+              time, the SCADA screens had to be simple enough that an operator
+              can understand what is happening in seconds, especially during
+              production trials when everyone is under pressure.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Deliver a complete boiler house automation with stable steam
+              pressure control, strong safety interlocks, and a WinCC SCADA
+              layer that supports daily operation through clear status,
+              alarms, and trends.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Fuel handling:</strong> elevator, crusher, feeders,
+                and screw conveyors with permissive checks and safe
+                sequencing.
+              </li>
+              <li>
+                <strong>Combustion:</strong> dual furnace operation with
+                controlled feed enable and safety driven stop conditions.
+              </li>
+              <li>
+                <strong>Air management:</strong> FD, PA, and ID fans with
+                feedback checks before allowing fuel feed.
+              </li>
+              <li>
+                <strong>Feed-water:</strong> pumps, tank monitoring, and
+                protection logic to avoid low-water risk.
+              </li>
+              <li>
+                <strong>Boiler control:</strong> steam pressure based
+                modulation with limits, stable tuning, and clear Auto and
+                Manual modes.
+              </li>
+              <li>
+                <strong>SCADA layer:</strong> overview screen, subsystem
+                pages, alarms, setpoints, trends, and logging for
+                troubleshooting.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>PLC structure and sequencing:</strong> I broke the
+                process into clean steps so each subsystem knew when to start,
+                when to wait, and when to stop. This reduced random starts and
+                made the logic easy to test during trials.
+              </li>
+              <li>
+                <strong>Permissives and interlocks:</strong> I added practical
+                checks like motor healthy, feedback present, and minimum
+                conditions met, so the system does not run equipment blindly.
+                Operators could clearly see why a start command was not
+                accepted.
+              </li>
+              <li>
+                <strong>Analog scaling and stability:</strong> I handled 4 to
+                20 mA scaling properly, added range checks, and supported
+                calibration. When signals were noisy on site, I adjusted the
+                approach so values became stable and usable for control.
+              </li>
+              <li>
+                <strong>PID modulation:</strong> steam pressure modulation and
+                feed tank level control were built with safe boundaries. I
+                ensured manual override is smooth and returning to Auto does
+                not create sudden jumps.
+              </li>
+              <li>
+                <strong>WinCC screens and usability:</strong> I designed
+                screens like an operator would use them: clear status colors,
+                direct navigation, visible setpoints, and trends placed where
+                they help during troubleshooting.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Commissioning</h4>
+            <ul>
+              <li>
+                <strong>Loop checks and IO validation:</strong> I verified
+                every signal end to end, corrected wiring mismatches, and
+                confirmed feedback logic, so the PLC decisions matched the
+                real equipment behavior.
+              </li>
+              <li>
+                <strong>Cold trials to hot trials:</strong> I first validated
+                logic without load, then moved step by step into hot trials,
+                watching how the system reacts in real conditions and fixing
+                issues without risking safety.
+              </li>
+              <li>
+                <strong>Alarm tuning and recovery flow:</strong> I refined
+                alarm messages so they explain the cause and the next action.
+                This helped operators stay calm and recover quickly during
+                production trials.
+              </li>
+              <li>
+                <strong>Customer communication and coordination:</strong>
+                during ramp-up, I coordinated closely with the customer team,
+                clarified what changes were safe, and aligned testing steps
+                with their production schedule. This kept decisions fast and
+                avoided confusion on the floor.
+              </li>
+            </ul>
+
+            <h4>Challenges and What I Fixed</h4>
+            <ul>
+              <li>
+                <strong>Steam pressure overshoot and frequent trips:</strong>
+                I stabilized it by tuning PID parameters, correcting scaling
+                where needed, and aligning cut-off thresholds with actual
+                process behavior.
+              </li>
+              <li>
+                <strong>Inconsistent analog readings:</strong> I supported
+                recalibration and adjusted scaling and validation, so control
+                and trending became reliable.
+              </li>
+              <li>
+                <strong>Troubleshooting delays:</strong> I improved SCADA
+                visibility with better status mapping and meaningful trends,
+                so the team could find the root cause faster.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>
+                Final PLC and WinCC project backups with clean structure.
+              </li>
+              <li>
+                IO list, tag list, and scaling parameters for future
+                maintenance.
+              </li>
+              <li>
+                Alarm list with clear messages and basic cause and effect
+                notes.
+              </li>
+              <li>PID tuning record and recommended setpoint limits.</li>
+              <li>
+                Commissioning checklist, trial notes, and handover guidance
+                for operators.
+              </li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>
+                Reliable sequencing and safer operation through strong
+                permissives and interlocks.
+              </li>
+              <li>
+                Stable steam pressure modulation and smoother production
+                trials.
+              </li>
+              <li>
+                Operator friendly SCADA with alarms and trends that support
+                fast decisions.
+              </li>
+              <li>
+                Successful commissioning and handover with documented settings
+                and backups.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>Siemens S7-1200</span>
+            <span>TIA Portal</span>
+            <span>WinCC SCADA</span>
+            <span>PID Loop Tuning</span>
+            <span>Analog Scaling</span>
+            <span>Start-Up Sequencing</span>
+            <span>Commissioning</span>
+            <span>Operator Handover</span>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Multi-Lift%20and%20Conveyor%20Automation%20System.png"
+              alt="Multi-Lift and Conveyor Automation System" />
+          </div>
+
+          <h3>Multi Lift Conveyor System Integration</h3>
+
+          <p>
+            A conveyor and lift integration project where my focus was dependable transfers and clean coordination
+            between sections during site acceptance. I validated each interface carefully and aligned testing decisions
+            with the customer team so ramp-up progressed without timing surprises.
+          </p>
+
+          <!-- Expandable quick scan (keeps the card compact like Project 2) -->
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Automotive intralogistics</span>
+                </div>
+                <div>
+                  <span class="qs-k">Role:</span><span class="qs-v">PLC and HMI Programmer, On-Site Commissioning
+                    Engineer</span>
+                </div>
+                <div>
+                  <span class="qs-k">PLC:</span><span class="qs-v">CompactLogix, Studio 5000</span>
+                </div>
+                <div>
+                  <span class="qs-k">HMI:</span><span class="qs-v">PanelView, FactoryTalk View ME</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Integrated new lift stations into an existing conveyor and
+                  turntable network without breaking the running sequence.
+                </li>
+                <li>
+                  Built encoder-based lift positioning with homing, limits,
+                  and stable stop accuracy for repeatable vehicle transfer.
+                </li>
+                <li>
+                  Commissioned on site with tight timelines, coordinated with
+                  the customer team, and delivered clean backups plus
+                  training.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> reduced sequence stops, reliable
+                  lift alignment, smoother routing between levels, faster
+                  fault isolation using improved HMI diagnostics.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> updated IO and interlock matrix,
+                  encoder calibration notes, handshake and routing notes,
+                  alarm list, SAT checklist, final PLC and HMI backups,
+                  operator guidance.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Open the full workflow, development work, commissioning
+                    experience, and outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <!-- Full details (modal content) -->
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>United Kingdom</p>
+
+            <h4>Role</h4>
+            <p>PLC and HMI Programmer | On-Site Commissioning Engineer</p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              Allen-Bradley CompactLogix, Studio 5000, PanelView HMI,
+              FactoryTalk View ME, Ethernet/IP, encoder-based lift
+              positioning, inter-conveyor synchronization, safety relays and
+              interlocks, digital and analog IO, diagnostics and alarm
+              handling.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              This project was like adding a new lane to a busy highway while
+              traffic is still moving. The customer already had an operating
+              conveyor network, and new lift stations had to be integrated in
+              a way that felt natural to the existing sequence. A lift is not
+              forgiving. If the position is off, the transfer gets risky,
+              cycles break, and everyone loses time.
+            </p>
+            <p>
+              The goal was not only to make the system run, but to make it
+              behave confidently. Auto mode needed smooth handshakes between
+              conveyors, turntables, and lifts. Manual mode needed safe
+              recovery actions that maintenance can trust. During
+              commissioning, clear communication with the customer team
+              mattered as much as clean logic, because decisions had to be
+              quick and safe.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Expand and commission a multi-lift and conveyor control system
+              for an automotive facility, coordinating conveyors, lifts, and
+              turntables for continuous vehicle flow between levels, with
+              reliable diagnostics and operator-friendly control.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Conveyors:</strong> transport vehicles between
+                stations using handshake signals and feedback confirmation.
+              </li>
+              <li>
+                <strong>Lift Units:</strong> move vehicles between levels with
+                encoder feedback, homing routines, limits, and position
+                windows.
+              </li>
+              <li>
+                <strong>Turntables:</strong> align vehicles to the next
+                conveyor path with safe permissives and confirmation signals.
+              </li>
+              <li>
+                <strong>Routing and status:</strong> exchange of vehicle or
+                job information and clear status feedback for operations.
+              </li>
+              <li>
+                <strong>Auto and Manual:</strong> full sequence running in
+                Auto, safe maintenance actions and controlled jogging in
+                Manual.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>PLC sequencing and integration:</strong> I modified
+                the existing sequence so the new lift stations became part of
+                the natural flow. I focused on predictable state transitions,
+                clean step logic, and clear wait conditions so the system does
+                not rush into unsafe motion.
+              </li>
+              <li>
+                <strong>Handshake logic between machines:</strong> I
+                implemented stable request, acknowledge, and complete signals
+                between conveyors, lifts, and turntables. When timing issues
+                appeared, I adjusted confirmations, timeouts, and sequence
+                conditions so the transfer stayed reliable.
+              </li>
+              <li>
+                <strong>Encoder-based positioning:</strong> I implemented lift
+                positioning using encoder counts with homing, direction
+                checks, limit supervision, and stop windows. This improved
+                repeatability and reduced misalignment during transfers.
+              </li>
+              <li>
+                <strong>HMI usability and diagnostics:</strong> I created and
+                refined screens for Auto and Manual control, interlock
+                visibility, and fault diagnosis. The HMI was designed to
+                answer operator questions fast: what is blocked, why it is
+                blocked, and what is the safe next action.
+              </li>
+              <li>
+                <strong>Safety thinking:</strong> I ensured the logic respects
+                safety chains, permissives, and recovery rules, so manual
+                actions do not bypass critical conditions.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Commissioning and Customer Coordination</h4>
+            <ul>
+              <li>
+                <strong>On-site validation:</strong> I validated sensors,
+                encoder feedback, and station handshakes on the real equipment
+                and corrected mismatches quickly.
+              </li>
+              <li>
+                <strong>Trials under real conditions:</strong> I ran Auto and
+                Manual trials, observed cycle timing, adjusted sequences, and
+                verified safe recovery flows so maintenance could handle
+                common issues without stress.
+              </li>
+              <li>
+                <strong>Customer interaction:</strong> I coordinated directly
+                with the customer team during the commissioning window,
+                explained root causes in simple terms, aligned on safe
+                changes, and confirmed fixes together.
+              </li>
+              <li>
+                <strong>Training and handover:</strong> I delivered backups
+                and walked the maintenance team through diagnostics, manual
+                recovery, and typical alarms.
+              </li>
+            </ul>
+
+            <h4>Challenges and What I Fixed</h4>
+            <ul>
+              <li>
+                <strong>Communication latency between sections:</strong>
+                improved handshake stability using better confirmation logic
+                and tuned timing.
+              </li>
+              <li>
+                <strong>Encoder noise and unstable feedback:</strong> handled
+                using filtering and logical validation to avoid false position
+                triggers.
+              </li>
+              <li>
+                <strong>Tight commissioning window:</strong> focused on
+                modular changes, structured testing, and fast coordination to
+                complete validation efficiently.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>
+                Final PLC and HMI backups (Studio 5000 and FactoryTalk View
+                ME).
+              </li>
+              <li>
+                Updated IO list, interlock matrix, and encoder related notes.
+              </li>
+              <li>
+                Commissioning validation checklist and trial observations.
+              </li>
+              <li>
+                Operator guidance for sequence flow, alarms, and safe
+                recovery.
+              </li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>
+                Successful lift integration into an existing conveyor network
+                with stable Auto operation.
+              </li>
+              <li>
+                Repeatable lift positioning using encoder feedback and
+                validated stop windows.
+              </li>
+              <li>
+                Improved troubleshooting with clearer HMI diagnostics and
+                alarm guidance.
+              </li>
+              <li>
+                Completed on-site validation and handover with customer
+                coordination and training.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>Allen-Bradley</span>
+            <span>Studio 5000</span>
+            <span>PanelView HMI</span>
+            <span>EtherNet/IP</span>
+            <span>Handshake Logic</span>
+            <span>Encoder Positioning</span>
+            <span>On-Site SAT</span>
+            <span>Customer Coordination</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Tea%20Production%20Plant%20Complete%20Process%20Automation.png"
+              alt="Tea Production Plant Automation" />
+          </div>
+
+          <h3>Tea Production Line Process Automation</h3>
+
+          <p>
+            A tea production line automation project where my focus was steady flow across feeding, drying,
+            fermentation, blending, and packing. I kept the approach modular and practical, so process adjustments
+            remained understandable and day-to-day operation stayed consistent.
+          </p>
+
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Food processing and manufacturing</span>
+                </div>
+                <div>
+                  <span class="qs-k">Role:</span><span class="qs-v">PLC and SCADA Engineer, Commissioning Support</span>
+                </div>
+                <div>
+                  <span class="qs-k">Tech:</span><span class="qs-v">Siemens S7 1200, TIA Portal V16</span>
+                </div>
+                <div>
+                  <span class="qs-k">SCADA:</span><span class="qs-v">WinCC Runtime Advanced, Trends and Reports</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Built modular PLC logic for conveyors, feeders, dryer,
+                  fermentation control, mixer, and packaging sequencing with
+                  clear Auto and Manual rules.
+                </li>
+                <li>
+                  Configured process control for temperature, humidity, and
+                  airflow using PID loops, stable analog scaling, and
+                  practical limits that match real production.
+                </li>
+                <li>
+                  Designed WinCC screens, alarms, trends, and daily reporting,
+                  then supported commissioning with calibration, trial runs,
+                  and operator training plus customer coordination.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> smoother section synchronization,
+                  more stable drying and fermentation control, fewer operator
+                  doubts during issues, faster troubleshooting using trends
+                  and clearer alarms.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> IO list and scaling sheet, WinCC
+                  tag mapping, alarm list and messages, PID tuning record,
+                  basic cause and effect notes, commissioning checklist,
+                  report templates, final backups and handover package.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Open the complete workflow, responsibilities, and
+                    outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>India</p>
+
+            <h4>Role</h4>
+            <p>PLC and SCADA Engineer | Commissioning Support</p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              Siemens S7 1200 PLC, TIA Portal V16, WinCC SCADA Runtime
+              Advanced, Ethernet communication, analog and digital IO, PID
+              control for temperature and humidity, conveyor and feeder
+              sequencing, dryer and mixer control, safety interlocks, alarm
+              handling, trends, data logging, and production reporting.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              A tea plant is a chain, not a single machine. If the leaf feed
+              is uneven, the dryer struggles. If drying is unstable,
+              fermentation becomes inconsistent. If blending timing is off,
+              packaging receives the wrong flow. The challenge was to make
+              every section feel connected, so the plant runs like one system
+              instead of isolated islands.
+            </p>
+            <p>
+              I focused on two things at the same time. First, the PLC logic
+              had to be reliable and safe, with predictable sequences and good
+              interlocks. Second, the SCADA screens had to be practical for
+              operators. When something stops, the operator should immediately
+              see what is blocked, why it is blocked, and what the safe next
+              step is. During commissioning, clear communication with the
+              customer team mattered a lot, because real production always
+              reveals real constraints.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Develop and commission a complete PLC and SCADA solution for a
+              tea production plant covering leaf feeding, drying,
+              fermentation, blending, and packaging, with stable process
+              control, safe operation, and strong real time visibility through
+              WinCC.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Leaf feed and conveyors:</strong> steady material flow
+                using permissives, sensor feedback, and controlled start
+                rules.
+              </li>
+              <li>
+                <strong>Drying section:</strong> temperature and airflow
+                control using PID loops, limits, and alarm supervision.
+              </li>
+              <li>
+                <strong>Fermentation and mixing:</strong> time based
+                sequencing with environment supervision such as humidity and
+                temperature.
+              </li>
+              <li>
+                <strong>Blending and packaging:</strong> coordinated sequence
+                for blending, weighing, and packaging transfer.
+              </li>
+              <li>
+                <strong>SCADA layer:</strong> overview pages, section pages,
+                alarms, trends, setpoints, and reporting for operations and
+                maintenance.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>PLC structure and modular logic:</strong> I built
+                reusable blocks for motors, valves, and section control so the
+                code stayed clean. This helped during testing because each
+                section could be validated without guessing.
+              </li>
+              <li>
+                <strong>Sequencing and synchronization:</strong> I created
+                clear step logic so feeding, drying, fermentation, blending,
+                and packaging stayed coordinated. Handovers between sections
+                were designed with confirmations, not only timers.
+              </li>
+              <li>
+                <strong>Analog scaling and validation:</strong> I handled 4 to
+                20 mA scaling, range checks, and stable readings so PID
+                control behaved properly.
+              </li>
+              <li>
+                <strong>PID tuning and limits:</strong> I tuned temperature
+                and humidity behavior with safe boundaries, so changes did not
+                shock the process. Manual override and return to Auto were
+                kept smooth to avoid sudden jumps.
+              </li>
+              <li>
+                <strong>WinCC usability:</strong> I built screens that show
+                what matters first, added trends where they help
+                troubleshooting, and wrote alarms that support action, not
+                confusion.
+              </li>
+              <li>
+                <strong>Reporting and data:</strong> I implemented logging and
+                simple production reports so the customer could review history
+                and spot patterns.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Commissioning and Customer Coordination</h4>
+            <ul>
+              <li>
+                <strong>Loop checks and calibration:</strong> I validated
+                sensors and actuators end to end, supported calibration, and
+                corrected scaling mismatches early.
+              </li>
+              <li>
+                <strong>Trial runs and stabilization:</strong> I ran section
+                wise trials and then full line trials, observing real behavior
+                and adjusting logic and tuning until the plant became stable.
+              </li>
+              <li>
+                <strong>Customer communication:</strong> I coordinated with
+                operators and the customer team during trials, explained what
+                changed and why, and confirmed results together so decisions
+                stayed fast and safe.
+              </li>
+              <li>
+                <strong>Operator handover:</strong> I supported training on
+                alarms, trends, setpoints, and safe recovery steps, so daily
+                operation stayed confident after handover.
+              </li>
+            </ul>
+
+            <h4>Challenges and What I Fixed</h4>
+            <ul>
+              <li>
+                <strong>Section synchronization issues:</strong> improved
+                handover conditions and confirmations so upstream and
+                downstream stayed aligned.
+              </li>
+              <li>
+                <strong>Unstable process control:</strong> corrected scaling
+                and tuned PID parameters to reduce oscillations during real
+                production.
+              </li>
+              <li>
+                <strong>Slow fault finding:</strong> improved alarm clarity
+                and trend visibility so operators could locate causes faster.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>Final PLC and WinCC backups with clean structure.</li>
+              <li>
+                IO list, tag mapping, scaling parameters, and network notes.
+              </li>
+              <li>
+                Alarm list with messages and basic cause and effect notes.
+              </li>
+              <li>PID tuning record and recommended setpoint limits.</li>
+              <li>
+                Commissioning checklist, trial notes, and reporting templates.
+              </li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>
+                Stable Auto and Manual operation across the full plant
+                workflow.
+              </li>
+              <li>
+                More consistent drying and fermentation behavior through
+                improved control.
+              </li>
+              <li>
+                Better visibility for operators using clearer alarms and
+                meaningful trends.
+              </li>
+              <li>
+                Smooth commissioning handover with documentation and final
+                backups.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>Siemens S7-1200</span>
+            <span>TIA Portal</span>
+            <span>WinCC SCADA</span>
+            <span>Process Control</span>
+            <span>PID Tuning</span>
+            <span>Data Logging</span>
+            <span>Alarm Management</span>
+            <span>Reporting</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Wheel%20Hub%20Seal%2C%20Bearing%20Stud%20%26%20Hydraulic%20Press%20Machines.png"
+              alt="Wheel Hub and Hydraulic Press Machines with PLC, HMI, and MES connectivity" />
+          </div>
+
+          <h3>Press Machines Automation with MES</h3>
+
+          <p>
+            A press automation project where my focus was repeatable cycle behavior, predictable motion performance, and
+            traceability readiness. I also added maintenance-friendly diagnostics and recovery guidance, so service
+            teams could isolate issues faster during acceptance and later support.
+          </p>
+
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Automotive press automation and
+                    traceability</span>
+                </div>
+                <div>
+                  <span class="qs-k">Role:</span><span class="qs-v">PLC, HMI and Electrical Design Engineer,
+                    Commissioning
+                    Support</span>
+                </div>
+                <div>
+                  <span class="qs-k">Tech:</span><span class="qs-v">Siemens S7-1200, TIA Portal V16, KTP700</span>
+                </div>
+                <div>
+                  <span class="qs-k">Integration:</span><span class="qs-v">MES communication over Ethernet, servo and
+                    stepper
+                    positioning</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Developed press sequencing with safe interlocks, part
+                  presence checks, and clean Auto and Manual recovery for two
+                  different machine workflows.
+                </li>
+                <li>
+                  Integrated servo and stepper positioning with homing,
+                  position windows, timeouts, and repeatable cycle behavior.
+                </li>
+                <li>
+                  Connected PLC data to MES for traceability and production
+                  status, and strengthened maintenance readiness using
+                  diagnostics, service-friendly alarms, and guided recovery
+                  steps during commissioning.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> smoother press cycles, repeatable
+                  positioning, stronger fault clarity for operators, and
+                  reliable MES handshakes for production visibility.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> PLC and HMI backups, MES tag
+                  mapping, alarm list and messages, IO mapping, servo and
+                  stepper parameter sheets, AutoCAD electrical drawings, FAT
+                  and SAT checklist, commissioning report.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Open the complete workflow, responsibilities, and
+                    outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>United States</p>
+
+            <h4>Role</h4>
+            <p>
+              PLC, HMI and Electrical Design Engineer | Commissioning Support
+            </p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              Siemens S7-1200 PLC, Siemens KTP700 HMI, TIA Portal V16,
+              Ethernet communication, MES integration, servo motor drive,
+              stepper motor positioning, digital and analog IO, safety relays
+              and interlocks, AutoCAD electrical design, diagnostics and alarm
+              handling.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              These machines were built for real production, not for demo. One
+              machine handled wheel hub seal and bearing stud pressing, and
+              the second was a hydraulic station press. Press machines look
+              simple from outside, but inside the cycle has many small
+              decisions: when it is safe to clamp, when to allow motion, how
+              to confirm a part is present, how to react if a sensor is late,
+              and how to recover without damaging the tool or the component.
+            </p>
+            <p>
+              My focus was to make the machine behave like an experienced
+              operator. In Auto mode, every step should feel predictable and
+              repeatable. In Manual mode, maintenance should be able to
+              recover safely with clear permissions. On top of that, the
+              customer wanted production visibility, so the PLC data had to be
+              structured properly for MES communication. During trials and
+              commissioning, communication with the customer team mattered a
+              lot, because small changes in the process can affect quality,
+              cycle time, and safety.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Design, program, and commission two press automation machines
+              with stable sequencing, reliable servo and stepper positioning,
+              and MES connectivity for production monitoring and traceability,
+              supported by clean electrical documentation and handover.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Cycle preparation:</strong> safety checks, air and
+                hydraulic readiness, part present confirmations, and station
+                permissives.
+              </li>
+              <li>
+                <strong>Press sequence:</strong> clamp, position, press
+                action, confirmation signals, and safe return steps.
+              </li>
+              <li>
+                <strong>Motion behavior:</strong> homing routines, axis enable
+                conditions, position windows, and fault handling for servo and
+                stepper movement.
+              </li>
+              <li>
+                <strong>MES exchange:</strong> structured PLC data blocks for
+                cycle status, result flags, and production events.
+              </li>
+              <li>
+                <strong>HMI layer:</strong> Auto and Manual controls, alarms,
+                diagnostics, and guided recovery steps for operators.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>PLC sequencing and state control:</strong> I
+                implemented step based logic so the cycle stays deterministic.
+                Every step had clear entry conditions, confirmations, and
+                timeouts, which made troubleshooting faster during trials.
+              </li>
+              <li>
+                <strong>Safety and interlocks:</strong> I added practical
+                permissives and interlocks around clamping, motion enable, and
+                press actions so the system does not act when conditions are
+                unsafe.
+              </li>
+              <li>
+                <strong>Servo and stepper positioning:</strong> I supported
+                stable positioning behavior using homing, direction checks,
+                limits, and position windows. The goal was repeatability, not
+                only movement.
+              </li>
+              <li>
+                <strong>MES integration design:</strong> I organized PLC data
+                in a clean structure for handshakes and status transfer. This
+                reduced confusion when mapping tags and improved communication
+                reliability.
+              </li>
+              <li>
+                <strong>HMI usability:</strong> I built screens that show
+                machine readiness, current step, interlock blocks, and alarms
+                in a practical way. Operators can see what is stopping the
+                cycle and what action is safe next.
+              </li>
+              <li>
+                <strong>Maintenance support mindset:</strong> I added
+                service-friendly diagnostics, manual jog permissions, and
+                clear alarm hints, then walked maintenance through common
+                recovery scenarios so they can resolve issues quickly during
+                real production.
+              </li>
+              <li>
+                <strong>Electrical design support:</strong> I maintained
+                AutoCAD electrical drawings and kept changes aligned with
+                wiring updates, so the documentation matched the built
+                machine.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Commissioning and Customer Coordination</h4>
+            <ul>
+              <li>
+                <strong>IO checks and validation:</strong> I validated sensor
+                feedback, actuator behavior, and safety chain responses during
+                trials and corrected mismatches early to avoid later
+                surprises.
+              </li>
+              <li>
+                <strong>Trial runs and stabilization:</strong> I ran cycles
+                step by step, observed timing, tuned timeouts and
+                confirmations, and ensured Auto and Manual behavior stayed
+                consistent.
+              </li>
+              <li>
+                <strong>Customer communication:</strong> I coordinated with
+                the customer team during acceptance activities, explained
+                issues in clear terms, aligned on safe changes, and verified
+                results together.
+              </li>
+              <li>
+                <strong>Handover and training:</strong> I supported operator
+                and maintenance handover with alarms, diagnostics, and
+                recovery guidance, plus final backups and documentation.
+              </li>
+            </ul>
+
+            <h4>Challenges and What I Fixed</h4>
+            <ul>
+              <li>
+                <strong>MES handshake reliability:</strong> improved
+                consistency by standardizing PLC status bits and using
+                Ethernet diagnostics during testing.
+              </li>
+              <li>
+                <strong>Servo and stepper synchronization:</strong> refined
+                motion behavior using safe acceleration profiles and better
+                confirmation logic to avoid vibration and misalignment.
+              </li>
+              <li>
+                <strong>Electrical changes during assembly:</strong> kept
+                drawings updated and aligned with real wiring so the final
+                documentation stayed accurate.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>Final PLC and HMI backups with MES configuration.</li>
+              <li>MES tag mapping and communication reference.</li>
+              <li>Servo and stepper parameter sheets.</li>
+              <li>AutoCAD electrical drawings and IO mapping tables.</li>
+              <li>Alarm list with practical operator messages.</li>
+              <li>FAT and SAT checklist and commissioning report.</li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>
+                Stable press cycles with clear interlocks and repeatable
+                motion behavior.
+              </li>
+              <li>
+                Better operator confidence through practical HMI diagnostics
+                and recovery steps.
+              </li>
+              <li>
+                Reliable MES connectivity for production visibility and
+                traceability.
+              </li>
+              <li>
+                Clean handover with updated drawings, backups, and
+                commissioning documentation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>Siemens S7-1200</span>
+            <span>TIA Portal</span>
+            <span>KTP HMI</span>
+            <span>Servo and Stepper</span>
+            <span>Press Cycle Control</span>
+            <span>MES Traceability</span>
+            <span>Commissioning</span>
+            <span>Maintenance Support</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Axle%20%26%20Wheel%20Hub%20Stud%20Pressing%20Line.png"
+              alt="Pressing machine with Siemens S7-1200 PLC and safety curtain" />
+          </div>
+
+          <h3>Stud Pressing Line OPC UA Upgrade</h3>
+
+          <p>
+            A pressing line upgrade project where my focus was structured monitoring integration and long-term service
+            readiness. I verified shopfloor signals and electrical wiring, then ensured data mapping and troubleshooting
+            remained dependable after system went online.
+          </p>
+
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Automotive pressing line</span>
+                </div>
+                <div>
+                  <span class="qs-k">Client:</span><span class="qs-v">Italy</span>
+                </div>
+                <div>
+                  <span class="qs-k">PLC:</span><span class="qs-v">Siemens S7-1200, TIA Portal V14</span>
+                </div>
+                <div>
+                  <span class="qs-k">Integration:</span><span class="qs-v">OPC UA, Ethernet, Safety Curtain</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Modified PLC and HMI logic to support a new press model,
+                  clean Auto and Manual recovery, and maintenance-safe
+                  behavior with safety curtain interlocks.
+                </li>
+                <li>
+                  Implemented OPC UA data mapping for cycle status, alarms,
+                  counters, and key sensor feedback so central monitoring
+                  could see the real picture in real time.
+                </li>
+                <li>
+                  Supported commissioning and service readiness through wiring
+                  verification, IO validation, operator training, and
+                  after-sales troubleshooting with structured diagnostics and
+                  clear alarm hints.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> stable pressing cycles, safer
+                  maintenance workflow, and reliable plant-wide visibility
+                  through OPC UA monitoring.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> IO and signal mapping, OPC UA
+                  node list, alarm list, commissioning checklist, updated PLC
+                  and HMI backups, basic wiring verification notes.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Open the complete workflow, responsibilities, and
+                    outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>Italy</p>
+
+            <h4>Role</h4>
+            <p>
+              PLC and HMI Programmer | On-Site Commissioning Engineer |
+              After-Sales Support
+            </p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              Siemens S7-1200 PLC, TIA Portal V14, Siemens KTP HMI, OPC UA
+              communication, Ethernet networking, safety curtain integration,
+              press sequence logic, alarm handling, cycle counters and
+              diagnostics, maintenance-safe manual mode, and wiring and IO
+              validation support.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              This line was already a working system, but the plant needed two
+              upgrades at the same time. First, the press model was changing,
+              which meant the logic and timings could not stay the same.
+              Second, the customer wanted centralized visibility, so
+              production and fault data had to be shared to the monitoring
+              layer through OPC UA.
+            </p>
+            <p>
+              The real challenge was doing improvements without creating new
+              confusion for operators and maintenance. So I approached it like
+              a real shopfloor problem. I started by validating what is
+              physically connected, checking sensors, wiring, and signal
+              behavior. Then I updated the PLC and HMI so the sequence stays
+              predictable, safety remains strict, and the data exposed through
+              OPC UA is meaningful, not random bits.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Modify and validate the PLC and HMI system of an axle and wheel
+              hub stud pressing line, implement OPC UA-based data exchange for
+              centralized monitoring, and deliver a service-friendly system
+              with safe manual operation and clear diagnostics for operators
+              and maintenance.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Cycle readiness:</strong> safety checks, curtain
+                status, press permissives, part presence validation, and
+                station interlocks.
+              </li>
+              <li>
+                <strong>Press sequence:</strong> controlled stroke logic,
+                confirmations, timeouts, and safe return steps.
+              </li>
+              <li>
+                <strong>Manual and maintenance:</strong> safe jog permissions,
+                maintenance blocks, and curtain-based prevention of unintended
+                motion.
+              </li>
+              <li>
+                <strong>OPC UA layer:</strong> status, alarms, counters, and
+                key feedback mapped to a structured node list for monitoring
+                and diagnostics.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>PLC logic updates:</strong> I modified the state flow
+                to match the new press behavior, added confirmations and
+                timeouts, and kept Auto and Manual transitions stable so
+                recovery did not feel risky.
+              </li>
+              <li>
+                <strong>OPC UA data design:</strong> I grouped the exposed
+                signals into meaningful sets such as cycle status, alarms,
+                counters, and key sensor feedback. This made monitoring clean
+                and helped remote diagnosis.
+              </li>
+              <li>
+                <strong>HMI usability:</strong> I updated screens to show
+                readiness blocks, safety state, and clear alarm guidance so
+                operators can react quickly.
+              </li>
+              <li>
+                <strong>Maintenance readiness:</strong> I ensured the manual
+                mode is service-friendly with safe permissions, clear
+                interlocks, and diagnostics that reduce guesswork.
+              </li>
+            </ul>
+
+            <h4>
+              How I Worked on Commissioning, Wiring, and Customer
+              Communication
+            </h4>
+            <ul>
+              <li>
+                <strong>Electrical wiring verification:</strong> I verified
+                sensor placement, checked IO signals end-to-end, and supported
+                quick fixes when wiring or terminal mapping did not match
+                documentation.
+              </li>
+              <li>
+                <strong>Commissioning validation:</strong> I validated both
+                press configurations under Auto and Manual, tested safety
+                curtain behavior, and confirmed stable cycle timing with the
+                customer team.
+              </li>
+              <li>
+                <strong>Customer communication:</strong> I coordinated changes
+                with client engineers and operators, explained why each update
+                was needed, and verified acceptance points together.
+              </li>
+            </ul>
+
+            <h4>After-Sales Customer Support</h4>
+            <ul>
+              <li>
+                Supported troubleshooting after handover using diagnostics and
+                OPC UA monitoring data, helping the team identify whether an
+                issue was wiring, sensor timing, or sequence logic.
+              </li>
+              <li>
+                Provided guided recovery steps and minor logic refinements
+                where needed, so downtime stayed low and maintenance
+                confidence stayed high.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>
+                Updated PLC and HMI backups aligned with the new press model.
+              </li>
+              <li>
+                OPC UA node list and tag mapping reference for monitoring
+                integration.
+              </li>
+              <li>
+                Alarm list and practical operator messages for faster fault
+                handling.
+              </li>
+              <li>
+                IO and wiring verification notes supporting maintenance
+                reference.
+              </li>
+              <li>
+                Commissioning checklist and acceptance validation notes.
+              </li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>
+                Stable Auto and Manual operation with safe maintenance
+                behavior.
+              </li>
+              <li>
+                Reliable OPC UA visibility for centralized monitoring and
+                diagnostics.
+              </li>
+              <li>
+                Faster troubleshooting through clearer alarms and structured
+                data.
+              </li>
+              <li>
+                Better long-term support through after-sales service
+                readiness.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>Siemens S7-1200</span>
+            <span>TIA Portal</span>
+            <span>KTP HMI</span>
+            <span>OPC UA</span>
+            <span>Safety Curtain</span>
+            <span>Electrical Wiring</span>
+            <span>After-Sales Support</span>
+            <span>Remote Troubleshooting</span>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Spices%20Grinding%20%26%20Packing%20Automation.png"
+              alt="Spices Grinding and Packing Automation HMI Mimic" />
+          </div>
+
+          <h3>Spice Grinding and Packing SCADA System</h3>
+
+          <p>
+            A multi-line spices plant project where my focus was fast stabilization during an emergency breakdown
+            situation. I verified real field signals and supported electrical wiring corrections where needed, while
+            coordinating with the customer team to restart production safely.
+          </p>
+
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Food processing, grinding and packing</span>
+                </div>
+                <div>
+                  <span class="qs-k">Client:</span><span class="qs-v">India</span>
+                </div>
+                <div>
+                  <span class="qs-k">PLC:</span><span class="qs-v">Siemens S7-1500, TIA Portal V14</span>
+                </div>
+                <div>
+                  <span class="qs-k">SCADA:</span><span class="qs-v">WinCC Runtime Advanced, Centralized SCADA</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Built modular PLC logic for five independent lines so start,
+                  stop, interlocks, and alarms stayed consistent across
+                  chilly, turmeric, mixed spices, and niche lines.
+                </li>
+                <li>
+                  Designed line HMIs and a single centralized SCADA view that
+                  brings all PLC data and alarms into one operator-friendly
+                  dashboard.
+                </li>
+                <li>
+                  Led time-critical commissioning and recovery during a
+                  breakdown: IO validation, alarm linking, VFD checks,
+                  emergency electrical wiring fixes, and clear customer
+                  communication to restart production safely.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> five lines running under one
+                  monitoring station, faster fault finding, safer recovery,
+                  and production continuity during emergency timelines.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> PLC, HMI, SCADA backups, tag and
+                  alarm mapping, IO allocation sheets, commissioning
+                  checklist, wiring correction notes, operator training
+                  guidance.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Open the complete workflow, responsibilities, and
+                    outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>India</p>
+
+            <h4>Role</h4>
+            <p>Automation and Commissioning Engineer</p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              Siemens S7-1500 PLC, TIA Portal V14, Siemens HMI, WinCC Runtime
+              Advanced (TIA Portal SCADA), VFD integration, level sensors,
+              temperature transmitters, pressure transmitters, Ethernet
+              communication, alarm management, IO testing, field wiring
+              validation.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              On paper, this was a clean multi-line project: five separate
+              spice lines, each with its own PLC and HMI, all visible on one
+              SCADA runtime. In real life, it turned into an urgent production
+              recovery. The existing system broke down, and the plant needed
+              production back quickly. That meant no slow debugging, no
+              guesswork, and no risky shortcuts.
+            </p>
+            <p>
+              I worked like a plant engineer on the floor: first confirm what
+              is actually happening in the field, then fix the real root
+              cause. Some issues were logic-related, some were signal-related,
+              and some were purely electrical wiring mismatches. Once the
+              basics were correct, the SCADA became a powerful tool because
+              operators could see all five lines clearly and react faster.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Design, test, and commission an integrated automation system for
+              five spice grinding and packing lines, ensuring uniform logic
+              structure, centralized SCADA monitoring, reliable alarms, and
+              fast recovery under emergency production requirements.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Raw feeding and grinding:</strong> material flow with
+                interlocks, motor feedback, and safe start sequencing.
+              </li>
+              <li>
+                <strong>Blending and packing:</strong> coordinated steps with
+                confirmations, timeouts, and operator-ready manual recovery.
+              </li>
+              <li>
+                <strong>Line instrumentation:</strong> level sensors and
+                temperature and pressure transmitters for monitoring and
+                control decisions.
+              </li>
+              <li>
+                <strong>VFD integration:</strong> stable run control, fault
+                handling, and feedback checks for fans and key drives.
+              </li>
+              <li>
+                <strong>Central SCADA:</strong> one place to monitor all
+                lines, acknowledge alarms, view statuses, and support
+                troubleshooting.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>PLC programming for five lines:</strong> I built a
+                consistent structure so every line behaved the same way in
+                Auto and Manual. This reduced operator confusion because the
+                logic style was uniform across the plant.
+              </li>
+              <li>
+                <strong>HMI and SCADA design:</strong> I created screens that
+                show readiness, interlocks, running status, alarms, and key
+                signals. I also centralized all five PLCs into one SCADA
+                runtime so the plant had a single monitoring station.
+              </li>
+              <li>
+                <strong>Alarm strategy and diagnostics:</strong> I validated
+                alarms and tag linking end to end so alarms were meaningful
+                and not noise, and the operator could see the cause and the
+                safe next step.
+              </li>
+            </ul>
+
+            <h4>
+              How I Worked on Commissioning, Communication, and Electrical
+              Wiring
+            </h4>
+            <ul>
+              <li>
+                <strong>No-load and on-load trials:</strong> I tested
+                sequences, safety interlocks, and synchronization first
+                without load, then with real process conditions, adjusting
+                timeouts and confirmations until the cycle became stable.
+              </li>
+              <li>
+                <strong>Field signal validation:</strong> I performed IO
+                testing and verified motor feedback, sensors, transmitters,
+                and VFD status signals so PLC decisions matched real equipment
+                behavior.
+              </li>
+              <li>
+                <strong>Electrical wiring fixes under pressure:</strong>
+                during the breakdown recovery, I supported emergency wiring
+                modifications and field fault corrections, then revalidated
+                signals to ensure the system was safe before restarting
+                production.
+              </li>
+              <li>
+                <strong>Customer interaction:</strong> I coordinated closely
+                with the client team during the emergency window, explained
+                what I was changing and why, and verified acceptance points
+                together so production could restart confidently.
+              </li>
+            </ul>
+
+            <h4>Challenges and What I Fixed</h4>
+            <ul>
+              <li>
+                <strong>Central SCADA communication across five PLCs:</strong>
+                stabilized using consistent tag mapping and sensible update
+                handling.
+              </li>
+              <li>
+                <strong>Fan tripping issues:</strong> diagnosed with motor
+                protection circuit breaker checks and drive feedback
+                verification, then corrected settings and logic assumptions.
+              </li>
+              <li>
+                <strong>Emergency downtime risk:</strong> reduced through fast
+                root-cause isolation, wiring corrections, and immediate
+                re-commissioning under time pressure.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>
+                Complete SCADA runtime package on the client PC with clear
+                startup flow.
+              </li>
+              <li>
+                PLC and HMI backups for all five lines with tag lists and IO
+                allocation sheets.
+              </li>
+              <li>
+                Alarm list validation notes and operator guidance for
+                acknowledgment and recovery.
+              </li>
+              <li>
+                Commissioning checklist and emergency recovery notes for
+                future maintenance reference.
+              </li>
+              <li>
+                Operator training support and documentation handover for daily
+                operation.
+              </li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>
+                All five grinding and packing systems commissioned and
+                monitored under one SCADA station.
+              </li>
+              <li>
+                Improved visibility and faster troubleshooting across the
+                plant.
+              </li>
+              <li>
+                Successful emergency recovery with wiring corrections and
+                stable production-ready logic.
+              </li>
+              <li>
+                Stronger operator confidence due to clearer alarms, screens,
+                and recovery steps.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>Siemens S7-1500</span>
+            <span>TIA Portal</span>
+            <span>WinCC SCADA</span>
+            <span>VFD Integration</span>
+            <span>Multi-Line Control</span>
+            <span>Electrical Wiring</span>
+            <span>Commissioning</span>
+            <span>Breakdown Recovery</span>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Multi-Station%20Axle%20%26%20Bearing%20Assembly%20SCADA%20Integration.png"
+              alt="Axle and Bearing Assembly SCADA Integration" />
+          </div>
+
+          <h3>Multi Station Assembly SCADA Optimization</h3>
+
+          <p>
+            A multi-station supervisory integration project where my focus was usability and maintainability of alarms,
+            tags, and recipe-driven changeovers. I kept configuration structured and consistent, so the system stayed
+            easier to operate and extend across stations over time.
+          </p>
+
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Automotive assembly and press stations</span>
+                </div>
+                <div>
+                  <span class="qs-k">Client:</span><span class="qs-v">Italy</span>
+                </div>
+                <div>
+                  <span class="qs-k">HMI:</span><span class="qs-v">ASEM HMIs plus ASEM Industrial PC supervision</span>
+                </div>
+                <div>
+                  <span class="qs-k">Integration:</span><span class="qs-v">OPC communication, Ethernet, Siemens S7-1200
+                    and
+                    S7-1500</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Rebuilt and organized a large alarm database of around 1800
+                  alarms using CSV export and import, creating clearer
+                  hierarchy, better readability, and faster fault finding.
+                </li>
+                <li>
+                  Cleaned tag databases and synchronization across four
+                  stations and the supervisory PC, then added recipe control
+                  for faster product changeovers.
+                </li>
+                <li>
+                  Implemented safe manual operation for mechanical and
+                  hydraulic subsystems and validated end to end behavior with
+                  the customer team, making the system easier for operators
+                  and maintenance to run daily.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> fewer confusing alarms, cleaner
+                  station visibility, faster changeovers, and a more
+                  maintenance-friendly SCADA layer with safer manual controls.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> unified alarm and tag list, CSV
+                  workflow files, recipe configuration sheets, manual mode
+                  safety notes, test checklist, final backups and handover
+                  guide.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Open the complete workflow, responsibilities, and
+                    outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>Italy</p>
+
+            <h4>Role</h4>
+            <p>SCADA Development and Integration Engineer</p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              ASEM Industrial PC (supervisory), ASEM HMI panels (local
+              stations), CSV tag and alarm configuration, OPC communication,
+              Ethernet and EtherNet/IP, hydraulic and pneumatic press control
+              visualization, recipe management, Siemens S7-1200 and S7-1500
+              PLCs, TIA Portal V17.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              This line had four stations running real assembly operations:
+              pressing, locking, conveying, leakage checks, air gap checks,
+              and inspection. Each station had its own ASEM HMI connected to a
+              Siemens PLC, and all stations were tied to a central supervisory
+              ASEM PC. On the surface it looked complete, but in practice the
+              SCADA layer was hard to live with. The alarm database was huge,
+              tags were inconsistent, and troubleshooting took too long
+              because the information was not structured.
+            </p>
+            <p>
+              I treated it like a real shopfloor problem: the SCADA should
+              help people, not fight them. I started by understanding how
+              operators actually react during stops, then rebuilt the alarm
+              and tag structure so faults became readable. After that, recipe
+              control made a big difference, because changeovers were no
+              longer a manual guessing game. The final goal was simple: if the
+              line stops, the team should quickly know what happened and what
+              is safe to do next.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Enhance and integrate a four station axle and bearing assembly
+              SCADA environment, with efficient alarm management, reliable tag
+              linkage across all stations, safe manual operation, and recipe
+              based production control through the ASEM supervisory PC
+              communicating with Siemens PLCs.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Station operations:</strong> pressing, locking,
+                conveying, leakage checks, air gap checks, and inspection
+                across stations 4, 7, 10, and 13.
+              </li>
+              <li>
+                <strong>Local control:</strong> each station operated via its
+                local ASEM HMI with direct PLC interface.
+              </li>
+              <li>
+                <strong>Central supervision:</strong> supervisory ASEM PC
+                provided plant level overview, alarm handling, and recipe
+                coordination.
+              </li>
+              <li>
+                <strong>Data exchange:</strong> real time status and alarm
+                exchange over Ethernet with consistent tag mapping and
+                polling.
+              </li>
+              <li>
+                <strong>Manual and safety:</strong> safe manual controls for
+                hydraulic and mechanical subsystems with validation rules.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>Alarm engineering with CSV workflow:</strong> I
+                exported the alarm database, reorganized it into clearer
+                categories, standardized naming, removed duplicates, and
+                re-imported it so the structure stayed consistent and
+                maintainable.
+              </li>
+              <li>
+                <strong>Tag database cleanup and synchronization:</strong> I
+                segregated tags by station, validated addresses and
+                references, and ensured the supervisory PC matched the station
+                HMIs so data stayed reliable.
+              </li>
+              <li>
+                <strong>Recipe management:</strong> I implemented recipe logic
+                for both individual stations and synchronized multi station
+                production, reducing changeover time and preventing wrong
+                settings during new product runs.
+              </li>
+              <li>
+                <strong>HMI usability and diagnostics:</strong> I designed
+                animated objects and status views for conveyors, stoppers,
+                presses, and locking mechanisms, so operators could see what
+                is moving, what is waiting, and what is blocked.
+              </li>
+              <li>
+                <strong>Maintenance readiness:</strong> I made alarms more
+                action-focused and added manual controls with safety
+                validation, helping maintenance perform recovery without
+                bypassing critical conditions.
+              </li>
+            </ul>
+
+            <h4>
+              How I Worked on Testing, Integration, and Customer Communication
+            </h4>
+            <ul>
+              <li>
+                <strong>Integration validation:</strong> I verified
+                communication stability between Siemens PLCs, station HMIs,
+                and the supervisory PC, then tuned polling and consistency
+                checks so updates stayed stable.
+              </li>
+              <li>
+                <strong>System testing and debugging:</strong> I tested alarm
+                triggering, acknowledgments, station readiness states, and
+                recipe transitions, then fixed edge cases that only appear
+                during real operation.
+              </li>
+              <li>
+                <strong>Customer coordination:</strong> I worked closely with
+                Italian automation specialists, explained the reasoning behind
+                structural changes, and aligned acceptance checks so the end
+                result matched how the line was actually used on site.
+              </li>
+            </ul>
+
+            <h4>Challenges and What I Fixed</h4>
+            <ul>
+              <li>
+                <strong>No OEM support:</strong> reverse engineered SCADA
+                logic and tag references to keep compatibility and stability.
+              </li>
+              <li>
+                <strong>Very large alarm database:</strong> simplified
+                maintenance using a repeatable CSV process and a clean
+                hierarchy.
+              </li>
+              <li>
+                <strong>Cross station consistency:</strong> improved
+                synchronization by validating tags, standardizing naming, and
+                tuning update behavior.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>
+                Unified alarm and tag list with clear structure and grouping.
+              </li>
+              <li>
+                Recipe configuration sheets for both station and full line
+                operation.
+              </li>
+              <li>
+                Operator and maintenance guide for alarms, manual operation,
+                and recipe workflow.
+              </li>
+              <li>
+                Final project backups and test notes for long term maintenance
+                reference.
+              </li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>
+                Cleaner multi station SCADA integration with reliable
+                synchronization.
+              </li>
+              <li>
+                Better diagnostics through structured alarms and clearer
+                screen behavior.
+              </li>
+              <li>Faster changeovers using recipe based production modes.</li>
+              <li>
+                More confidence for operators and maintenance due to safer
+                manual controls and practical guidance.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>ASEM HMI</span>
+            <span>ASEM Industrial PC</span>
+            <span>OPC Integration</span>
+            <span>Alarm Engineering</span>
+            <span>CSV Workflow</span>
+            <span>Recipe Management</span>
+            <span>Maintenance Readiness</span>
+          </div>
+        </div>
+        <!-- Project 9 -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/RuturajInAI/Ruturaj-portfolio-images/refs/heads/main/assets/Pharma%20Powder%20Conveying%20%26%20Grinding%20Automation.png"
+              alt="Pharma Powder Conveying and Grinding Automation" />
+          </div>
+
+          <h3>Pharma Powder Handling Line Commissioning</h3>
+
+          <p>
+            A pharma powder handling line commissioning project where my focus was stable cycles across conveying,
+            grinding, mixing, and packing. I also strengthened maintenance readiness through practical diagnostics and
+            clear recovery flow, so downtime could be reduced after handover.
+          </p>
+
+          <details class="scan-accordion">
+            <summary class="scan-summary">
+              <span class="scan-title">Quick Overview</span>
+
+              <span class="scan-hint scan-expand">Click to expand</span>
+              <span class="scan-hint scan-collapse">Click to collapse</span>
+            </summary>
+
+            <div class="quick-scan">
+              <div class="qs-meta">
+                <div>
+                  <span class="qs-k">Domain:</span><span class="qs-v">Pharma powder handling and packing</span>
+                </div>
+                <div>
+                  <span class="qs-k">Client:</span><span class="qs-v">India</span>
+                </div>
+                <div>
+                  <span class="qs-k">PLC:</span><span class="qs-v">CompactLogix 5370 (1769-L19ER), Studio 5000
+                    v32</span>
+                </div>
+                <div>
+                  <span class="qs-k">HMI:</span><span class="qs-v">PanelView Plus 7, FactoryTalk View ME</span>
+                </div>
+              </div>
+
+              <h4>Overview</h4>
+              <ul class="qs-bullets">
+                <li>
+                  Validated IO, calibrated analog transmitters, and stabilized
+                  Auto cycles for silo feed, grinding, and packing with strong
+                  permissives and interlocks.
+                </li>
+                <li>
+                  Integrated VFD control, setpoints, feedback, and fault
+                  handling, then built HMI screens that show what is blocked,
+                  why it is blocked, and how to recover safely.
+                </li>
+                <li>
+                  Commissioned on the shopfloor with customer coordination,
+                  added maintenance-friendly bypass and diagnostics, and
+                  delivered clear handover documentation plus operator
+                  training.
+                </li>
+              </ul>
+
+              <div class="qs-footer">
+                <div>
+                  <strong>Impact:</strong> predictable Auto and Manual
+                  operation, safer starts, faster troubleshooting, and
+                  smoother handover for operations and maintenance.
+                </div>
+                <div>
+                  <strong>Artifacts:</strong> commissioning checklist,
+                  calibration and scaling notes, parameter sheets, alarm list
+                  and messages, HMI quick guide, final PLC and HMI backups.
+                </div>
+              </div>
+
+              <div class="qs-cta">
+                <div class="qs-cta-text">
+                  <div class="qs-cta-title">Want the full story</div>
+                  <div class="qs-cta-note">
+                    Open the complete workflow, responsibilities, and
+                    outcomes.
+                  </div>
+                </div>
+
+                <button class="read-more-btn qs-view-details" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </details>
+
+          <div class="details">
+            <h4>Client Origin</h4>
+            <p>India</p>
+
+            <h4>Role</h4>
+            <p>Automation and Commissioning Engineer</p>
+
+            <h4>Technologies Used</h4>
+            <p>
+              CompactLogix 5370 (1769-L19ER), Studio 5000 v32, PanelView Plus
+              7 (PV2711), FactoryTalk View ME, EtherNet/IP, VFD integration,
+              weight, DP, and level transmitters, metal detector integration,
+              alarm handling, interlocks, and maintenance bypass.
+            </p>
+
+            <h4>Project Story</h4>
+            <p>
+              This project was all about trust. In a pharma environment,
+              powder handling has no space for uncontrolled starts or unclear
+              alarms. The system moves material from silo to micro-pulverizer,
+              controls feeding through a screw feeder, mixes in a vertical or
+              nauta-style mixer, then goes into weighment and packing. Every
+              section can run independently in Manual, but Auto cycles must
+              behave like a well-practiced routine.
+            </p>
+            <p>
+              On site, the work was not only programming. It was validation,
+              calibration, and real troubleshooting. When a DP transmitter
+              drifts, the logic makes the wrong decision. When a VFD fault
+              feedback is not mapped cleanly, operators lose time. My goal was
+              to make the system calm: clear permissives, reliable analog
+              values, meaningful alarms, and recovery steps that maintenance
+              can perform safely.
+            </p>
+
+            <h4>Objective</h4>
+            <p>
+              Commission and validate an automated line for powder conveying,
+              grinding, mixing, weighment, and packing, ensuring reliable Auto
+              and Manual operation, safe interlocks, practical alarm handling,
+              and a smooth handover to operations and maintenance.
+            </p>
+
+            <h4>System Workflow</h4>
+            <ul>
+              <li>
+                <strong>Silo feeding:</strong> safe start checks, level
+                confirmations, and controlled conveyance to the grinding
+                section.
+              </li>
+              <li>
+                <strong>Grinding:</strong> micro-pulverizer sequence with
+                screw feeder coordination, VFD behavior, and fault
+                supervision.
+              </li>
+              <li>
+                <strong>Mixing:</strong> vertical or nauta-style mixing
+                sequence with timing, permissives, and safe stop rules.
+              </li>
+              <li>
+                <strong>Weighment and packing:</strong> stable weight
+                readings, pack cycle steps, and clear reject handling when
+                required.
+              </li>
+              <li>
+                <strong>Safety and quality controls:</strong> metal detector
+                reject, door open, DP high, emergency stop, and other plant
+                permissives.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Development</h4>
+            <ul>
+              <li>
+                <strong>Auto cycle sequencing:</strong> implemented and tested
+                three structured Auto cycles, silo feed, grinding, and
+                packing, with step confirmations and timeouts so the sequence
+                stayed predictable.
+              </li>
+              <li>
+                <strong>Interlocks and permissives:</strong> built safe start
+                logic using DP, level, door status, E-stop chain, and metal
+                detector reject conditions, reducing unsafe starts and false
+                running states.
+              </li>
+              <li>
+                <strong>VFD integration:</strong> configured start and stop,
+                Hz setpoints, feedback mapping, and fault handling so drives
+                responded correctly during real production.
+              </li>
+              <li>
+                <strong>HMI usability:</strong> built mimic views, sub-system
+                controls, alarm banners, and trends, focusing on operator
+                clarity instead of only showing raw tags.
+              </li>
+              <li>
+                <strong>Maintenance readiness:</strong> added controlled
+                bypass logic for specific checks where required, with clear
+                indication and safety validation, so maintenance could
+                diagnose without risky shortcuts.
+              </li>
+            </ul>
+
+            <h4>How I Worked on Commissioning and Customer Interaction</h4>
+            <ul>
+              <li>
+                <strong>IO verification and calibration:</strong> performed
+                complete IO checks and analog scaling, then supported sensor
+                calibration so transmitters produced stable values.
+              </li>
+              <li>
+                <strong>Dry runs and simulation:</strong> executed dry-run
+                Auto cycles using signal simulation for sections that were not
+                yet wired, which helped validate logic early and reduce
+                surprises later.
+              </li>
+              <li>
+                <strong>On-floor troubleshooting:</strong> isolated root
+                causes using status bits, alarms, VFD diagnostics, and signal
+                checks, then implemented clean fixes rather than temporary
+                workarounds.
+              </li>
+              <li>
+                <strong>Customer coordination and training:</strong> aligned
+                test steps with the customer team, explained changes clearly,
+                and trained operators on alarms, manual recovery, and safe
+                restarts.
+              </li>
+            </ul>
+
+            <h4>Challenges and What I Fixed</h4>
+            <ul>
+              <li>
+                <strong>Noisy or drifting analog signals:</strong> stabilized
+                by calibration support, scaling validation, and practical
+                range checks in logic.
+              </li>
+              <li>
+                <strong>Drive fault confusion:</strong> improved mapping and
+                HMI messaging so operators could quickly identify fault source
+                and safe next action.
+              </li>
+              <li>
+                <strong>Unsafe recovery attempts:</strong> introduced clearer
+                interlock visibility and safer manual permissions so recovery
+                stayed controlled.
+              </li>
+            </ul>
+
+            <h4>Deliverables and Handover</h4>
+            <ul>
+              <li>
+                Commissioning checklist, parameter sheets, and calibration
+                notes.
+              </li>
+              <li>Alarm list with practical messages and recovery hints.</li>
+              <li>
+                Operator quick-reference guide for Auto, Manual, and safe
+                restart.
+              </li>
+              <li>Final PLC and HMI backups for long-term support.</li>
+            </ul>
+
+            <h4>Key Outcomes</h4>
+            <ul>
+              <li>
+                Stable Auto and Manual operation across silo feed, grinding,
+                and packing.
+              </li>
+              <li>
+                Safer start behavior through strong permissives and
+                interlocks.
+              </li>
+              <li>
+                Faster troubleshooting using clearer alarms and HMI
+                diagnostics.
+              </li>
+              <li>
+                Smoother handover to operations and maintenance with training
+                and documentation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>CompactLogix</span>
+            <span>Studio 5000</span>
+            <span>PanelView Plus 7</span>
+            <span>FactoryTalk View ME</span>
+            <span>VFD Integration</span>
+            <span>Transmitter Calibration</span>
+            <span>Commissioning</span>
+            <span>Diagnostics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="reveal">
+      <h2>Education</h2>
+      <div class="education-grid">
+        <div class="education-card reveal">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-content">
+            <h3>Master in Digital Engineering</h3>
+            <p>Otto von Guericke University Magdeburg, Germany</p>
+            <p class="dates">04.2024 - Present</p>
+          </div>
+        </div>
+        <div class="education-card reveal">
+          <div class="education-icon"><i class="fas fa-university"></i></div>
+          <div class="education-content">
+            <h3>Bachelor of Technology in Electrical Engineering</h3>
+            <p>Savitrabai Phule Pune University, India</p>
+            <p class="dates">06.2020 - 07.2023</p>
+          </div>
+        </div>
+        <div class="education-card reveal">
+          <div class="education-icon"><i class="fas fa-university"></i></div>
+          <div class="education-content">
+            <h3>Diploma in Electrical Engineering</h3>
+            <p>Maharashtra State Board of Technical Education (MSBTE), India</p>
+            <p class="dates">07.2018 - 03.2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <!-- Automation & Control -->
+        <div class="skill-category-card reveal">
+          <h3><i class="fas fa-cogs"></i>Automation & Control</h3>
+          <ul>
+            <li>
+              PLC Programming (Siemens • Allen-Bradley • Mitsubishi • Beckhoff
+              • Omron • Schneider Electric • Delta Electronics • B&R
+              Industrial Automation • Keyence • Fuji Electric • Phoenix
+              Contact)
+            </li>
+            <li>HMI & SCADA Development</li>
+            <li>Industrial Commissioning & Troubleshooting</li>
+            <li>Safety Interlocks & Control Logic Design</li>
+            <li>PID Control & Analog/Digital I/O Configuration</li>
+            <li>Motion Control (Servo & Stepper Motors)</li>
+            <li>VFD Integration & Drive Commissioning</li>
+          </ul>
+        </div>
+        <!-- Engineering Tools -->
+        <div class="skill-category-card reveal">
+          <h3><i class="fas fa-tools"></i>Engineering Tools</h3>
+          <ul>
+            <li>Siemens TIA Portal (V14–V17)</li>
+            <li>WinCC SCADA / Runtime Advanced</li>
+            <li>TwinCAT 3 (Beckhoff)</li>
+            <li>Studio 5000 (Allen-Bradley)</li>
+            <li>GX Works 3 / GT Designer 3 (Mitsubishi)</li>
+            <li>Sysmac Studio (Omron)</li>
+            <li>
+              EcoStruxure Control Expert / SoMachine (Schneider Electric)
+            </li>
+            <li>ISPSoft / WPLSoft (Delta Electronics)</li>
+            <li>Automation Studio (B&R Industrial Automation)</li>
+            <li>KV Studio (Keyence)</li>
+            <li>MICREX-SX / MONITOUCH Configurator (Fuji Electric)</li>
+            <li>PLCnext Engineer (Phoenix Contact)</li>
+            <li>AutoCAD Electrical</li>
+          </ul>
+        </div>
+        <!-- Industrial Communication -->
+        <div class="skill-category-card reveal">
+          <h3>
+            <i class="fas fa-network-wired"></i>Industrial Communication
+          </h3>
+          <ul>
+            <li>Profinet • Profibus • EtherNet/IP • Modbus • OPC UA</li>
+            <li>PLC–HMI–SCADA Network Configuration</li>
+            <li>MES & Data Exchange Integration</li>
+          </ul>
+        </div>
+        <!-- Process Expertise -->
+        <div class="skill-category-card reveal">
+          <h3><i class="fas fa-industry"></i>Process Expertise</h3>
+          <ul>
+            <li>Automotive Assembly & Press Lines</li>
+            <li>Conveyor & Lift Automation</li>
+            <li>Boiler & Utility Automation</li>
+            <li>Food / Pharma / Packaging Systems</li>
+          </ul>
+        </div>
+        <!-- Key Technologies -->
+        <div class="skill-category-card reveal">
+          <h3><i class="fas fa-lightbulb"></i>Key Technologies</h3>
+          <ul>
+            <li>Beckhoff TwinCAT 3 Programming</li>
+            <li>Siemens S7-1200 / S7-1500 PLCs</li>
+            <li>Safety PLC Configuration (F-Series / TwinSAFE)</li>
+            <li>Industry 4.0 & OPC UA Integration</li>
+          </ul>
+        </div>
+        <!-- Professional Skills -->
+        <div class="skill-category-card reveal">
+          <h3><i class="fas fa-user-tie"></i>Professional Skills</h3>
+          <ul>
+            <li>On-Site Commissioning</li>
+            <li>Cross-Functional Team Collaboration</li>
+            <li>Technical Documentation & Operator Training</li>
+            <li>Troubleshooting & Root Cause Analysis</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>
+            I am always open to discussing new projects, creative ideas, or
+            opportunities to be part of an ambitious team, and I am flexible
+            with location. Feel free to reach out.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:ruturajabroad@gmail.com">ruturajabroad@gmail.com</a>
+            </li>
+            <li><i class="fas fa-phone"></i> +49 15560133862</li>
+            <li><i class="fas fa-map-marker-alt"></i> Magdeburg, Germany</li>
+          </ul>
+          <a href="#" id="contact-section-btn" class="btn">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="chat-bubble" aria-label="Open AI Assistant" role="button">
+    <div class="robot-head">
+      <div class="antenna left"></div>
+      <div class="antenna right"></div>
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="mouth"></div>
+    </div>
+  </div>
+
+  <div id="chat-modal-container" class="modal-container">
+    <div class="modal-content">
+      <button class="close-btn" aria-label="Close">&times;</button>
+      <h2>AI Assistant</h2>
+      <p class="subheading">
+        Ask my AI assistant any questions you have about my experience or
+        skills!
+      </p>
+      <div class="chat-container">
+        <div id="chat-history"></div>
+        <div class="chat-input-container">
+          <input type="text" id="chat-input" placeholder="e.g., 'Which PLC platforms is he proficient in?'"
+            aria-label="Ask a question" />
+          <button id="send-btn" aria-label="Send message">→</button>
+          <div id="loader" class="hidden"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="email-modal-container" class="modal-container">
+    <div class="modal-content">
+      <button class="close-btn" aria-label="Close">&times;</button>
+      <h2>Get In Touch</h2>
+      <p>You can reach out to Ruturaj directly via email:</p>
+      <a href="mailto:ruturajabroad@gmail.com" class="email-link">ruturajabroad@gmail.com</a>
+    </div>
+  </div>
+
+  <div id="project-modal-container" class="modal-container">
+    <div class="modal-content project-modal-content">
+      <button class="close-btn" aria-label="Close">&times;</button>
+      <div class="project-modal-body">
+        <div class="project-modal-details">
+          <h2 id="project-modal-title"></h2>
+          <div id="project-modal-details-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ruturaj Dilip Gawade. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  </div>
+
+  <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
