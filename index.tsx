@@ -250,7 +250,7 @@ scanAccordions.forEach((accordion) => {
  * Triggers the download of the uploaded PDF file.
  */
 function downloadPDF() {
-  const downloadName = "Ruturaj_Gawade_Resume.pdf";
+  const downloadName = "Ruturaj_Gawade_Portfolio.pdf";
 
   const link = document.createElement("a");
   link.href = PORTFOLIO_PDF_URL;
