@@ -16,6 +16,9 @@ const profileCanvas = document.getElementById(
   "profile-canvas",
 ) as HTMLCanvasElement;
 const downloadPdfBtn = document.getElementById("download-pdf-btn");
+const downloadOptionsModalContainer = document.getElementById('download-options-modal-container');
+const downloadFullPdfBtn = document.getElementById('download-full-pdf-btn');
+const downloadSummaryPdfBtn = document.getElementById('download-summary-pdf-btn');
 
 // Modal Elements
 const chatBubble = document.getElementById("chat-bubble");
@@ -246,25 +249,33 @@ scanAccordions.forEach((accordion) => {
 });
 
 // --- PDF Download Logic ---
-/**
- * Triggers the download of the uploaded PDF file.
- */
-function downloadPDF() {
-  const downloadName = "Ruturaj_Gawade_Portfolio.pdf";
+const FULL_PORTFOLIO_PDF_URL = '/Portfolio_Ruturaj.pdf';
+const SUMMARY_PORTFOLIO_PDF_URL = '/Portfolio_Ruturaj_Summary.pdf';
 
-  const link = document.createElement("a");
-  link.href = PORTFOLIO_PDF_URL;
-  link.download = downloadName;
-  link.target = "_blank";
+function downloadFile(fileUrl: string, downloadName: string) {
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = downloadName;
+    link.target = '_blank';
 
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
-downloadPdfBtn?.addEventListener("click", (e) => {
-  e.preventDefault();
-  downloadPDF();
+downloadPdfBtn?.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal(downloadOptionsModalContainer);
+});
+
+downloadFullPdfBtn?.addEventListener('click', () => {
+    downloadFile(FULL_PORTFOLIO_PDF_URL, 'Ruturaj_Gawade_Full_Portfolio.pdf');
+    closeModal();
+});
+
+downloadSummaryPdfBtn?.addEventListener('click', () => {
+    downloadFile(SUMMARY_PORTFOLIO_PDF_URL, 'Ruturaj_Gawade_Portfolio_Summary.pdf');
+    closeModal();
 });
 
 // --- Profile Picture Canvas Animation ---
